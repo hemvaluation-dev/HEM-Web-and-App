@@ -426,3 +426,8 @@ entrypoint = "./functions/google-geocode/index.ts"
 enabled = true
 verify_jwt = false
 entrypoint = "./functions/assignment-push/index.ts"
+
+[functions.case-retention]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/case-retention/index.ts"

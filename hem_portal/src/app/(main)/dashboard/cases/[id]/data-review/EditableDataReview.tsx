@@ -203,7 +203,7 @@ export default function EditableDataReview({ caseId, initialData, revision, stat
         </div>
       )}
 
-      {locked && <p role="status" className="ui-panel p-4 text-sm">This dossier is read only during review and after approval. Request revisions before editing.</p>}
+      {locked && <p role="status" className="ui-panel p-4 text-sm">Completed cases are read only. For a legacy review case, select Revise data and report under Case completion & team assignments before editing.</p>}
       {/* Fields Grid */}
       <div className="bg-surface rounded-xl border border-border-base p-8 shadow-sm">
         <div className="flex items-center justify-between mb-6 pb-4 border-b border-border-base/40">

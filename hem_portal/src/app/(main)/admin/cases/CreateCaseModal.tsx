@@ -4,11 +4,11 @@ import { useRouter } from 'next/navigation'
 
 import { useState, useEffect, useRef } from 'react'
 import { Plus, X, Loader2 } from 'lucide-react'
-import { createCase, getAllClients, getAllReviewers, getAllAgents, generateDocumentUploadUrl, attachCaseDocumentRecord } from '../actions'
+import { createCase, getAllClients, getAllAgents, generateDocumentUploadUrl, attachCaseDocumentRecord } from '../actions'
 import { INDIAN_STATES } from '@/utils/constants'
 import { createClient } from '@/utils/supabase/client'
 
-export default function CreateCaseModal({ agents, clients, reviewers, sidebarMode, mobileNavMode }: { agents?: any[], clients?: any[], reviewers?: any[], sidebarMode?: boolean, mobileNavMode?: boolean }) {
+export default function CreateCaseModal({ agents, clients, sidebarMode, mobileNavMode }: { agents?: any[], clients?: any[], reviewers?: any[], sidebarMode?: boolean, mobileNavMode?: boolean }) {
   const router = useRouter()
   const [isOpen, setIsOpen] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -16,7 +16,6 @@ export default function CreateCaseModal({ agents, clients, reviewers, sidebarMod
   
   const [agentList, setAgentList] = useState<any[]>(agents || [])
   const [clientList, setClientList] = useState<any[]>(clients || [])
-  const [reviewerList, setReviewerList] = useState<any[]>(reviewers || [])
   const [selectedClientId, setSelectedClientId] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const idempotencyKeyRef = useRef(crypto.randomUUID())
@@ -33,17 +32,11 @@ export default function CreateCaseModal({ agents, clients, reviewers, sidebarMod
           setClientList(res)
         }
       })
-      getAllReviewers().then(res => {
-        if (res && res.length > 0) {
-          setReviewerList(res)
-        }
-      })
     } else {
       setAgentList(agents || [])
       setClientList(clients || [])
-      setReviewerList(reviewers || [])
     }
-  }, [isOpen, agents, clients, reviewers])
+  }, [isOpen, agents, clients])
 
   // Reset idempotency key and submission state when modal opens fresh
   useEffect(() => {
@@ -267,40 +260,7 @@ export default function CreateCaseModal({ agents, clients, reviewers, sidebarMod
                 </div>
               </div>
 
-              <div className="pt-2 border-t border-line/60 dark:border-line/60">
-                <label className="block text-[11px] font-bold text-muted dark:text-muted uppercase tracking-wider mb-1.5">Initiation Date</label>
-                <input 
-                  type="datetime-local" 
-                  name="deadline_date"
-                  className="w-full bg-paper-2 dark:bg-paper-2 border border-line dark:border-line rounded-xl px-3.5 py-2.5 text-xs text-ink dark:text-white focus:border-primary dark:focus:border-primary outline-none transition-all"
-                />
-              </div>
-
-              <div className="pt-2 border-t border-line/60 dark:border-line/60">
-                <label className="block text-[11px] font-bold text-muted dark:text-muted uppercase tracking-wider mb-1.5">Initial Documents (Optional)</label>
-                <input 
-                  type="file" 
-                  name="documents" 
-                  multiple 
-                  className="w-full bg-paper-2 dark:bg-paper-2 border border-line dark:border-line rounded-xl px-3.5 py-1.5 text-xs text-ink dark:text-white focus:border-primary dark:focus:border-primary outline-none transition-all file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-primary/10 file:text-brand-dark hover:file:bg-primary/20"
-                />
-              </div>
-
-              <div className="pt-2 border-t border-line/60 dark:border-line/60">
-                <div>
-                  <label className="block text-[11px] font-bold text-muted dark:text-muted uppercase tracking-wider mb-1.5">Assign Senior Reviewer (Final Approval)</label>
-                  <select 
-                    name="reviewer_id" 
-                    className="w-full bg-paper-2 dark:bg-paper-2 border border-line dark:border-line rounded-xl px-3.5 py-2.5 text-xs text-ink dark:text-white focus:border-primary dark:focus:border-primary outline-none transition-all"
-                  >
-                    <option value="unassigned">Keep Unassigned for now</option>
-                    {reviewerList.map(r => (
-                      <option key={r.id} value={r.id}>{r.full_name || r.email} ({r.role?.toUpperCase() || 'MANAGER'})</option>
-                    ))}
-                  </select>
-                </div>
-                <p className="text-[10px] text-muted dark:text-muted mt-2 italic">Report Valuator will be auto-assigned when someone takes the case after field data submission.</p>
-              </div>
+              <p className="text-xs text-muted">A valuator prepares the report and completes the case. Senior approval is not required.</p>
 
               {error && (
                 <div className="p-3 bg-danger/10 border border-danger/20 rounded-xl">

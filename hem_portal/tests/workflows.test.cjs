@@ -30,11 +30,11 @@ test('a concurrent case edit is reported as a conflict, never a successful statu
       } },
     }) },
   })
-  const result = await updateCaseStatus('case-id', 'reviewed', 7)
+  const result = await updateCaseStatus('case-id', 'completed', 7)
   assert.match(result.error, /changed/)
-  assert.deepEqual(calls, [['transition_case', { p_case_id: 'case-id', p_status: 'reviewed', p_expected_revision: 7 }]])
+  assert.deepEqual(calls, [['transition_case', { p_case_id: 'case-id', p_status: 'completed', p_expected_revision: 7 }]])
   calls.length = 0
-  assert.match((await updateCaseStatus('case-id', 'reviewed', 6)).error, /changed/)
+  assert.match((await updateCaseStatus('case-id', 'completed', 6)).error, /changed/)
   assert.equal(calls.length, 0)
 
 })

@@ -29,7 +29,7 @@ export default async function ReportTab({ params }: { params: Promise<{ id: stri
       photos={photos || []}
       locationData={locationData}
     />
-    ) : <p className="ui-panel p-5 text-sm">Report generation is available from saved field data during inspection, and after field submission until senior review begins.</p>}
+    ) : <p className="ui-panel p-5 text-sm">Report generation is available from saved field data until case completion. For a legacy review case, select Revise data and report under Case completion & team assignments first.</p>}
     </>
   )
 }

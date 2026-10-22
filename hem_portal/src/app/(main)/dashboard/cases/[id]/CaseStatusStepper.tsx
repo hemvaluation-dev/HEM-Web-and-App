@@ -8,8 +8,6 @@ const STEPS = [
   { key: 'in_progress', label: 'Site Activity' },
   { key: 'field_visit_done', label: 'Field Visit Done' },
   { key: 'report_drafted', label: 'Report Drafted' },
-  { key: 'in_review', label: 'In Senior Review' },
-  { key: 'reviewed', label: 'Reviewed' },
   { key: 'delivered', label: 'Delivered (Completed)' }
 ]
 
@@ -20,8 +18,8 @@ export default function CaseStatusStepper({ currentStatus }: { caseId: string, c
   if (currentStatus.toLowerCase() === 'created') activeIndex = 0
   if (['location_captured', 'photos_uploaded', 'data_drafted', 'in_progress'].includes(currentStatus.toLowerCase())) activeIndex = 2
   if (currentStatus.toLowerCase() === 'submitted') activeIndex = 3
-  if (currentStatus.toLowerCase() === 'pending_review') activeIndex = 5
-  if (currentStatus.toLowerCase() === 'completed' || currentStatus.toLowerCase() === 'delivered') activeIndex = 7
+  if (['pending_review','in_review','reviewed'].includes(currentStatus.toLowerCase())) activeIndex = 4
+  if (currentStatus.toLowerCase() === 'completed' || currentStatus.toLowerCase() === 'delivered') activeIndex = 5
   if (activeIndex === -1) activeIndex = 0
 
   return (

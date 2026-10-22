@@ -1,6 +1,6 @@
 # Android case assignment notifications
 
-Status (2026-10-21): mobile integration and sender code implemented; additive database migration applied to the original HEM project. Firebase credentials, sender deployment, dispatcher activation and physical-device delivery testing are still pending. No historical case data was modified. No notifications have been sent.
+Status (2026-10-22): mobile integration and database migration are present in the restored HEM project (`gwqfwtcxlwcmglrozshc`). Firebase project `hem-9b6dc` credentials passed an HTTP v1 validation-only request (HTTP 200; no notification delivered). `assignment-push` is deployed with its shared-secret authentication guard. Encrypted Edge secrets and Vault dispatcher credentials are configured. Assignment wake-up and the five-minute retry job are active. The deployed sender and database-to-Edge probe both returned HTTP 200 (`not_pending`) for a nonexistent event; unauthenticated requests returned 401. No devices are registered yet, so physical-device delivery testing remains pending. No historical assignments were backfilled.
 
 ## Firebase details needed
 
@@ -15,7 +15,7 @@ There is no Firebase database, Storage, Analytics or Cloud Function dependency. 
 
 - The migration `20261021090405_assignment_push_notifications.sql` is already installed on HEM. Apply it normally only on other environments.
 - Deploy `supabase/functions/assignment-push/index.ts` as `assignment-push`, using the checked-in function config (`verify_jwt=false`). The handler validates `x-push-secret`; neither the public publishable key nor a user's session authorizes sending.
-- In Supabase Vault, create `hem_push_url` = `https://osvuyzhaucjrtdhqrmlx.supabase.co/functions/v1/assignment-push` and `hem_push_webhook_secret` = the same strong value used in Edge secrets.
+- In Supabase Vault, create `hem_push_url` = `https://gwqfwtcxlwcmglrozshc.supabase.co/functions/v1/assignment-push` and `hem_push_webhook_secret` = the same strong value used in Edge secrets.
 - Run `supabase/setup/enable_assignment_push.sql`. This installs an asynchronous database wake-up and one five-minute retry job. It is deliberately not activated before the sender is configured. Do not additionally create a Dashboard webhook: that would invoke the sender twice.
 - Build/install the updated release APK and sign in. Accept Android's notification permission. Profile shows configuration/permission/registration status and a retry control.
 
@@ -43,6 +43,8 @@ To pause dispatch, remove the Vault `hem_push_webhook_secret` and unschedule `he
 - `supabase/tests/assignment_push.sql`: live transactional assertions passed; all test queue/device writes rolled back. Real case rows are never updated by this test.
 - Table/RPC privilege probes confirmed client reads and client dispatch are denied. Security advisors flag the service-only tables' absence of client RLS policies as informational; deny-by-default is intentional. Other pre-existing project advisories are outside this feature.
 
-Before rollout, test a real assignment on a physical Android phone in foreground, background and cold-start states, then reassignment, logout/account switching, denied permission, and a network outage/retry. This cannot be verified until Firebase is configured.
+Firebase-enabled release APK built successfully on 2026-10-22 (37.1 MB). Focused Flutter analysis passed; two mobile notification tests and seven sender tests passed.
+
+Before rollout, test a real assignment on a physical Android phone in foreground, background and cold-start states, then reassignment, logout/account switching, denied permission, and a network outage/retry. This requires installing the updated APK, signing in and allowing notifications on a physical device.
 
 References: [Firebase Flutter messaging](https://firebase.google.com/docs/cloud-messaging/flutter/get-started), [FCM HTTP v1](https://firebase.google.com/docs/cloud-messaging/send/v1-api), [Supabase push notifications](https://supabase.com/docs/guides/functions/examples/push-notifications).

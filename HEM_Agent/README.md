@@ -10,11 +10,11 @@ Use Flutter with Dart 3.11 or newer:
 flutter pub get
 export SUPABASE_PUBLISHABLE_KEY='your-original-project-publishable-key'
 flutter run \
-  --dart-define=SUPABASE_URL=https://osvuyzhaucjrtdhqrmlx.supabase.co \
+  --dart-define=SUPABASE_URL=https://gwqfwtcxlwcmglrozshc.supabase.co \
   --dart-define=SUPABASE_PUBLISHABLE_KEY="$SUPABASE_PUBLISHABLE_KEY"
 ```
 
-Pass `--dart-define=SUPABASE_URL=... --dart-define=SUPABASE_PUBLISHABLE_KEY=...` from protected CI or a local secret store. Only the publishable key belongs in a mobile binary. Never add the service-role key. The default URL targets the current original project, but the key remains a required build input.
+Pass `--dart-define=SUPABASE_URL=... --dart-define=SUPABASE_PUBLISHABLE_KEY=...` from protected CI or a local secret store. Only the publishable key belongs in a mobile binary. Never add the service-role key. The defaults target the restored project. Protected CI can override the URL and public client key together.
 
 ## Workflow contract
 

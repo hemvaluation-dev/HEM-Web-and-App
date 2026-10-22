@@ -56,10 +56,12 @@ test('review workflow forbids skipped stages, unauthorized approval and reopenin
   const { nextCaseStatus } = load('src/lib/cases/workflow.ts')
   const owner = { role: 'owner' }, agent = { role: 'field_agent' }
   assert.throws(() => nextCaseStatus('assigned', 'completed', owner), { status: 409 })
-  assert.throws(() => nextCaseStatus('in_review', 'reviewed', agent), { status: 403 })
+  assert.throws(() => nextCaseStatus('in_review', 'completed', agent), { status: 403 })
   assert.throws(() => nextCaseStatus('completed', 'in_progress', owner), { status: 409 })
   assert.equal(nextCaseStatus('pending_review', 'report_drafted', owner), 'report_drafted')
   assert.equal(nextCaseStatus('reviewed', 'delivered', owner), 'completed')
+  assert.equal(nextCaseStatus('report_drafted', 'completed', {role:'valuator'}), 'completed')
+  assert.throws(() => nextCaseStatus('report_drafted', 'in_review', owner), {status:409})
   assert.throws(() => nextCaseStatus('submitted', 'report_drafted', agent), { status: 403 })
   assert.equal(nextCaseStatus('submitted', 'report_drafted', { role: 'valuator' }), 'report_drafted')
 })

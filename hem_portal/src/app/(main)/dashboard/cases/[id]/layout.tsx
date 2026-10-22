@@ -3,20 +3,19 @@ import { authenticate } from '@/lib/auth/session'
 import { ArrowLeft, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import CaseTabs from './CaseTabs'
-import SeniorReviewPanel from './SeniorReviewPanel'
+import CaseCompletionPanel from './CaseCompletionPanel'
 import StatusBadge from '@/components/ui/StatusBadge'
 import { ReactNode } from 'react'
 
-export default async function CaseDetailsLayout({ 
-  children, 
-  params 
-}: { 
-  children: ReactNode, 
-  params: Promise<{ id: string }> 
+export default async function CaseDetailsLayout({
+  children,
+  params
+}: {
+  children: ReactNode,
+  params: Promise<{ id: string }>
 }) {
   const { id } = await params
   const [caseData, directory, { user, profile }] = await Promise.all([getCase(id), getDirectory(), authenticate()])
-  const reviewers = directory.filter(u => ['reviewer', 'manager', 'lead', 'owner', 'admin'].includes(u.role) || ['L3', 'L4', 'L5'].includes(u.level))
   const valuators = directory.filter(u => u.role !== 'field_agent' && (['valuator', 'staff', 'editor', 'analyst', 'lead', 'manager', 'owner', 'admin'].includes(u.role) || ['L2', 'L3', 'L4', 'L5'].includes(u.level)))
 
   return (
@@ -40,14 +39,12 @@ export default async function CaseDetailsLayout({
         </div>
       </div>
 
-      <details className="mb-5 ui-panel"><summary className="px-4 py-3 text-xs font-medium">Team assignments & approvals</summary><div className="px-4 pb-4 space-y-3">
-        <SeniorReviewPanel 
-          caseId={id} 
-          currentStatus={caseData.status} 
+      <details open={['report_drafted', 'in_review', 'reviewed', 'completed'].includes(caseData.status)} className="mb-5 ui-panel"><summary className="px-4 py-3 text-xs font-medium">Case completion & team assignments</summary><div className="px-4 pb-4 space-y-3">
+        <CaseCompletionPanel
+          caseId={id}
+          currentStatus={caseData.status}
           profile={profile} revision={caseData.revision}
-          reviewers={reviewers || []} 
           valuators={valuators || []}
-          currentReviewer={caseData.reviewer} 
           currentValuator={caseData.valuator}
           currentUserId={user?.id || ''}
           caseCreatorId={caseData.created_by || ''}
