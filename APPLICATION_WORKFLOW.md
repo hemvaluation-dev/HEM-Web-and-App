@@ -1,105 +1,65 @@
-# HEM Associates - Application Workflow Documentation
+# HEM application workflow
 
-This document outlines the end-to-end lifecycle of a case within the HEM Associates Valuation platform, starting from case creation by an Admin to the final generation of a valuation report, including the mobile app field visit processes.
+Current contract, reviewed **22 October 2026**. The website and Android field app share Supabase project `gwqfwtcxlwcmglrozshc`.
 
----
+## Case lifecycle
 
-## 1. Case Creation (Web Portal)
+```text
+new → assigned → in_progress → field_visit_done → report_drafted → completed
 
-The journey begins when an Admin creates a new case in the web dashboard. This is usually triggered when a bank or financial institution requests a property valuation.
+report_drafted → field_visit_done  (revise data / regenerate report)
+```
 
-### Data Passed During Creation:
-When creating a case, the following data points are captured:
-- **Application Number / Case Ref** (Mandatory)
-- **Applicant Name** (Mandatory)
-- **Phone Number** (Mandatory)
-- **Property Address** (Mandatory)
-- **State** (Mandatory)
-- **Branch** (Mandatory)
-- **Property Type** (e.g., Residential, Commercial, Industrial, Vacant Land)
-- **Client (Bank/Institution)** (Mandatory)
-- **Initiation Date** (The date/time the case was assigned to HEM)
-- **Assigned Field Officer** (Agent responsible for visiting the site - Optional at creation)
-- **Assigned Valuator** (Person responsible for drafting the report - Optional at creation)
-- **Initial Documents** (PDFs/Images provided by the bank)
+The revisions arrow applies to `report_drafted`, before completion. Completed cases cannot be reopened through the normal workflow. A new case can also enter inspection directly where authorization permits. `in_review` and `reviewed` remain legacy compatibility states; senior approval is no longer a required step. Existing legacy review cases can be completed by a valuator or returned to field data/report editing.
 
-**State Transition:** 
-- If no Field Officer is assigned, the status becomes `new`.
-- If a Field Officer is assigned, the status becomes `assigned`.
+Transitions are validated in portal code and the database. Revision checks reject conflicting updates rather than silently overwriting newer work. The database owns `completed_at`; clients cannot backdate it to accelerate deletion.
 
----
+## 1. Initiation and assignment
 
-## 2. Field Visit & Data Collection (Mobile App)
+An authorized portal user creates the applicant/property/lender case and assigns a field agent. The case creator or other explicitly authorized administrative path controls reassignment. A valuator is assigned or takes responsibility for report preparation after field submission. Reviewer assignment is no longer part of the case UI; old reviewer IDs are preserved for compatibility, not removed from historical data.
 
-The assigned Field Officer (Agent) logs into the mobile app and sees the case in their pending queue. They travel to the physical property to conduct the inspection.
+Creating an assigned case or changing its assignee queues an Android push event. Unchanged assignments and unassignment do not send new alerts. The notification contains generic text, not applicant details. Delivery requires a registered device and notification permission; no registered device means the event is skipped, while the case remains available in the app.
 
-### Step 2.1: Check-In (Location Verification)
-- The agent arrives at the property and clicks **"Check-In"**.
-- The app captures the agent's exact **GPS Coordinates (Latitude & Longitude)** and the timestamp.
-- **State Transition:** Status updates to `in_progress`.
+## 2. Mobile field inspection
 
-### Step 2.2: Photo Capture
-- The agent uses the app's camera workflow to capture mandatory and optional photos of the property.
-- Standard photos include: Elevation, Road, Interiors (Hall, Kitchen, Bedroom), Boundaries (North, South, East, West), Meter, and a Selfie at the site.
-- Photos are immediately uploaded to Supabase Storage and linked to the case.
-- **State Transition:** Status updates to `photos_uploaded`.
+The assigned agent opens the case and captures:
 
-### Step 2.3: Document Upload
-- The agent uploads any physical documents collected at the site (e.g., electricity bills, property tax receipts, layouts).
+- GPS coordinates and reported accuracy; optional address/map enrichment.
+- Photos by category, including property evidence, screenshots and map/route/satellite-related images.
+- Property documents, audio/video and editable Data Review values.
 
-### Step 2.4: AI Data Extraction (Optional)
-- The agent can run the AI Extraction tool.
-- The app sends the uploaded documents and photos to the Groq extraction service through the protected Supabase/portal API path.
-- The AI automatically extracts measurements, names, and boundary details from the documents to speed up data entry.
+Data Review has **Save Data**, not its own Submit button. Draft saves do not imply final submission. Field submission is performed through the case workflow, moving to `field_visit_done`. Blank Data Review values are allowed, but GPS location, at least one property document and one property photo remain required. A media recording alone does not satisfy the property-document requirement.
 
-### Step 2.5: Data Review & Submission
-- The agent fills out a comprehensive digital form capturing physical metrics.
-- **Key Data Collected:**
-  - Land Measurements & Built-Up Area (BUA)
-  - Boundaries (Physical vs. Documented)
-  - Road Width & Approach Road
-  - Meter Number & Owner details
-  - Proximity to hazards, civic amenities, and city center
-  - Stage and Quality of Construction
-- **Save Draft:** If fields are missing, the agent can click **"Save Draft"**. The data is saved, status becomes `data_drafted`, and the agent can return later.
-- **Submit Case:** If all mandatory fields are fully populated, the agent clicks **"Submit Case"**.
-- **State Transition:** Status updates to `field_visit_done` and the `submitted_at` timestamp is permanently recorded. The case disappears from the agent's active mobile queue.
+Submitted mobile field work is locked for central processing. Agents cannot approve reports or mark cases completed. Their case access remains limited to permitted assignments.
 
----
+## 3. Portal Data Review and report mapping
 
-## 3. Valuation & Report Generation (Web Portal)
+Saved mobile values flow into the case dossier and related field records. The website's Data Review lets authorized users correct the field data. Report forms resolve the selected template's aliases/bindings rather than assuming every lender uses the same field names.
 
-Once the field visit is submitted, the case moves back to the web portal for the Valuators and Reviewers.
+Mapping code is in `hem_portal/src/lib/reports/field-mapping.ts`, `lender-bindings.ts` and the template engine. The selected lender/template determines which fields, formatting and photo slots appear. Missing values must be reviewed; mapping does not invent absent inspection facts. Template-specific QA evidence is under `qa/` and should be rerun when templates change.
 
-### Step 3.1: Data Review
-- The assigned Valuator logs into the web portal.
-- They open the case and review:
-  - The GPS location on an interactive map (to verify the agent actually visited the correct site).
-  - The photos and documents uploaded from the mobile app.
-  - The physical measurements and boundary details submitted by the agent.
+Linear land/plinth/slab measurements are entered in feet. The calculation controls derive the associated areas and convert the display/rate unit between square feet, square yards and square metres. Users provide the corresponding rate and select which calculated components belong in the total; slab value is not assumed to be an extra component. The engine carries these values into mapped report fields. Document, physical and calculated areas can represent different business facts and should not be silently treated as interchangeable.
 
-### Step 3.2: Financial Valuation
-- The Valuator inputs the financial metrics based on the field data and market research.
-- **Data Entered:**
-  - Land Rate / Flat Rate
-  - Construction Rate
-  - Total Market Value
-  - Distress Value
-  - Government Value
-  - Recommended Percentage (%)
+Customer Response Remark is optional and included in MIS; an absent value remains blank. Dashboard/analytics filters support multiple selections and month selection.
 
-### Step 3.3: Report Generation & Completion
-- The Valuator finalizes the report data.
-- The system can generate the final PDF valuation report to be sent to the bank.
-- **State Transition:** Status updates to `completed` or `delivered`.
+## 4. Report generation
 
----
+A valuator can generate reports from saved mobile draft data during inspection or after field submission where the workflow permits. A report preview/download does not itself mean field submission or case completion. Saved artifacts are recorded in `case_reports` and private `reports` Storage.
 
-## 4. Analytics & MIS Reporting (Web Portal)
+Built-in lender templates include KreditBee and Veritas; consult the template registry in `src/lib/report-engine/templates.ts` for the exact current selection. Financial institution display names can be edited in Settings. Generation uses template-specific bindings, photo categories and measurement mappings. Route sketch, satellite/map and other screenshot categories use the designated wide image slots where the template supports them.
 
-Admins and Managers use the web dashboard to track operational efficiency.
+The portal renders PDF/DOCX in its Node runtime; no separate report-generator Edge Function, AI extractor or Python report service is required. Normal dossier/evidence changes invalidate a drafted state so a fresh report must be prepared. Locked legacy review cases must be returned for revisions before editing/generation.
 
-- **Dashboard Analytics:** Displays KPIs like Total Cases, Completion Rate, and Average Turnaround Time (TAT).
-- **MIS Export:** Admins can generate a dynamic CSV report containing all case details.
-  - **Turnaround Time (TAT)** is automatically calculated in days (difference between the `Initiation Date` and the `Submitted Date`).
-  - Contains all extracted field data, location data, and timestamps for auditing.
+## 5. Completion and retention
+
+After a report is saved and the case reaches `report_drafted`, a user with valuation permission can select **Mark case completed** under **Case completion & team assignments**. Senior approval is not required. The UI explains the irreversible 30-day retention policy before completion.
+
+The database records completion time. The hourly cleanup checks for `completed` cases at least 30 days old, removes their actual Storage files first and only then deletes the case and cascading records. Errors preserve metadata for retry; missing completion timestamps never qualify. Shared files referenced by another case are preserved for that case. See [retention implementation and recovery limits](docs/CASE_COMPLETION_RETENTION.md).
+
+## Other staff workflows
+
+Team management, attendance, leave requests, analytics and exports remain separate modules. Removing senior case approval does not remove managers, owners or the leave-review authorization sequence. Access is determined by role, level, active status and case relationships; the presence of a menu item is not the authorization boundary.
+
+## Verification scope
+
+The current release passed 128 portal/backend tests, transactional workflow/retention assertions, a synthetic live file-cleanup test and Android build checks. No real case was completed or aged solely for testing. Physical push delivery and hosted Vercel workflows remain release acceptance tasks. Historical QA reports record what was verified on their dates; they are not universal certification of every future case/template.

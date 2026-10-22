@@ -50,3 +50,6 @@ qa/runs/*/generated/reports/
 **/*firebase-adminsdk*.json
 supabase/.env.*.local
 .secrets/
+
+# FlutterFire-generated client configuration is supplied locally/native on Android.
+HEM_Agent/lib/firebase_options.dart

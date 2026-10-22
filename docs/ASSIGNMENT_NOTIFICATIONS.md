@@ -2,7 +2,7 @@
 
 Status (2026-10-22): mobile integration and database migration are present in the restored HEM project (`gwqfwtcxlwcmglrozshc`). Firebase project `hem-9b6dc` credentials passed an HTTP v1 validation-only request (HTTP 200; no notification delivered). `assignment-push` is deployed with its shared-secret authentication guard. Encrypted Edge secrets and Vault dispatcher credentials are configured. Assignment wake-up and the five-minute retry job are active. The deployed sender and database-to-Edge probe both returned HTTP 200 (`not_pending`) for a nonexistent event; unauthenticated requests returned 401. No devices are registered yet, so physical-device delivery testing remains pending. No historical assignments were backfilled.
 
-## Firebase details needed
+## Configuration reference for another build/environment
 
 1. Create/use a Firebase project on Spark. Register the existing Android application ID **`com.example.flutter_app`**. Do not rename that ID as part of this integration: installed APKs must continue to update normally.
 2. Download the matching `google-services.json` to `HEM_Agent/android/app/google-services.json`. This path is ignored by Git. Do not paste credentials into chat.
@@ -11,7 +11,7 @@ Status (2026-10-22): mobile integration and database migration are present in th
 
 There is no Firebase database, Storage, Analytics or Cloud Function dependency. FCM is free; Supabase database, Edge executions and egress still count toward the existing plan.
 
-## Activation (after credentials are available)
+## Activation reference (already active on the current backend)
 
 - The migration `20261021090405_assignment_push_notifications.sql` is already installed on HEM. Apply it normally only on other environments.
 - Deploy `supabase/functions/assignment-push/index.ts` as `assignment-push`, using the checked-in function config (`verify_jwt=false`). The handler validates `x-push-secret`; neither the public publishable key nor a user's session authorizes sending.
@@ -37,7 +37,7 @@ To pause dispatch, remove the Vault `hem_push_webhook_secret` and unschedule `he
 
 - `flutter test`: 55 passing tests including payload route validation and unconfigured feature behavior.
 - Focused Flutter analysis: new service, main and auth code pass.
-- Release APK builds without Firebase configuration.
+- The optional integration builds without native Firebase configuration; the current configured Android release also builds.
 - `npm test`: 123 passing portal/backend tests.
 - `node --test hem_portal/tests/assignment-push.test.cjs`: seven passing tests; mocked sender tests cover authentication/configuration guards, duplicate claims, stale assignments, no devices, transient failure recovery, successful OAuth/FCM sending, prior deliveries and invalid-token removal.
 - `supabase/tests/assignment_push.sql`: live transactional assertions passed; all test queue/device writes rolled back. Real case rows are never updated by this test.

@@ -1,3 +1,5 @@
+> Historical design/reference document. For current setup, services, workflow and release requirements, use [README](../README.md), [deployment](../DEPLOYMENT.md), [workflow](../APPLICATION_WORKFLOW.md) and [services](SERVICES.md). Older role/service descriptions below do not override those guides.
+
 # Portal redesign and online Windows delivery
 
 The portal in `hem_portal/` remains the deployable Next.js application. The Flutter field app in `HEM_Agent/` shares the portal's slate/blue tokens, HEM branding, lifecycle labels, active-account checks, and submitted-for-review status contract.

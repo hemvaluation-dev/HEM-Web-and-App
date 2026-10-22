@@ -1,3 +1,5 @@
+> Historical design/reference document. For current setup, services, workflow and release requirements, use [README](../README.md), [deployment](../DEPLOYMENT.md), [workflow](../APPLICATION_WORKFLOW.md) and [services](SERVICES.md). Older role/service descriptions below do not override those guides.
+
 # HEM Platform — Design System & Design Practices
 
 This document captures the **design direction**, the **design skills/techniques**
