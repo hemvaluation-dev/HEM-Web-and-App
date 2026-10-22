@@ -1,0 +1,158 @@
+
+ aditya-birla-lap
+word/media/image7.png {'cx': '6772275', 'cy': '3080385'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image8.png {'cx': '6772275', 'cy': '3103880'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image9.png {'cx': '6772275', 'cy': '2877820'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image10.png {'cx': '6772275', 'cy': '2861310'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image11.png {'cx': '6734175', 'cy': '6886574'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+
+ axis-finance
+printareas [('_xlnm.Print_Area', 'Sheet1!$A$1:$L$137')]
+xl/media/image10.png [('from', [('col', '1'), ('colOff', '36603'), ('row', '123'), ('rowOff', '71917')]), ('to', [('col', '11'), ('colOff', '1187824'), ('row', '135'), ('rowOff', '212911')])]
+xl/media/image11.png [('from', [('col', '1'), ('colOff', '40355'), ('row', '136'), ('rowOff', '49613')]), ('to', [('col', '11'), ('colOff', '1187823'), ('row', '136'), ('rowOff', '3507441')])]
+xl/media/image12.png [('from', [('col', '0'), ('colOff', '56030'), ('row', '0'), ('rowOff', '44823')]), ('to', [('col', '2'), ('colOff', '672354'), ('row', '10'), ('rowOff', '380999')])]
+xl/media/image14.jpeg [('from', [('col', '4'), ('colOff', '249270'), ('row', '121'), ('rowOff', '6915')]), ('to', [('col', '7'), ('colOff', '761999'), ('row', '121'), ('rowOff', '2835088')])]
+
+ chola-sme
+word/media/image11.png {'cx': '5943600', 'cy': '3735705'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image12.png {'cx': '5943600', 'cy': '3737610'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image13.png {'cx': '5943600', 'cy': '3470910'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image14.png {'cx': '5943600', 'cy': '3448685'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image15.png {'cx': '5943600', 'cy': '2112645'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10881', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+
+ equitas
+word/media/image13.png {'cx': '6606540', 'cy': '3053715'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10620', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image14.png {'cx': '6606540', 'cy': '3048635'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10620', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image15.png {'cx': '6606540', 'cy': '2760345'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10620', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image16.png {'cx': '6606540', 'cy': '2748915'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10620', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+
+ icici
+printareas [('_xlnm.Print_Area', 'Sheet1!$A$1:$Q$188')]
+xl/media/image1.png [('from', [('col', '1'), ('colOff', '13607'), ('row', '2'), ('rowOff', '54428')]), ('to', [('col', '1'), ('colOff', '1292678'), ('row', '2'), ('rowOff', '1078164')])]
+xl/media/image5.png [('from', [('col', '1'), ('colOff', '734786'), ('row', '166'), ('rowOff', '68037')]), ('to', [('col', '12'), ('colOff', '353785'), ('row', '185'), ('rowOff', '217714')])]
+
+ jm-finance
+printareas [('_xlnm.Print_Area', "'Retail Technical'!$A$1:$K$488")]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '10'), ('colOff', '0'), ('row', '12'), ('rowOff', '0')]), ('to', [('col', '10'), ('colOff', '0'), ('row', '12'), ('rowOff', '0')])]
+None [('from', [('col', '10'), ('colOff', '0'), ('row', '12'), ('rowOff', '0')]), ('to', [('col', '10'), ('colOff', '0'), ('row', '12'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '10'), ('colOff', '0'), ('row', '12'), ('rowOff', '0')]), ('to', [('col', '10'), ('colOff', '0'), ('row', '12'), ('rowOff', '0')])]
+None [('from', [('col', '10'), ('colOff', '0'), ('row', '12'), ('rowOff', '0')]), ('to', [('col', '10'), ('colOff', '0'), ('row', '12'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+None [('from', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '0'), ('row', '58'), ('rowOff', '0')])]
+xl/media/image1.png [('from', [('col', '0'), ('colOff', '37259'), ('row', '0'), ('rowOff', '0')]), ('to', [('col', '0'), ('colOff', '761879'), ('row', '0'), ('rowOff', '885234')])]
+xl/media/image9.jpeg [('from', [('col', '4'), ('colOff', '40608'), ('row', '411'), ('rowOff', '39200')]), ('to', [('col', '6'), ('colOff', '2061882'), ('row', '435'), ('rowOff', '168087')])]
+xl/media/image11.jpeg [('from', [('col', '0'), ('colOff', '48733'), ('row', '437'), ('rowOff', '53770')]), ('to', [('col', '2'), ('colOff', '2218764'), ('row', '461'), ('rowOff', '156881')])]
+xl/media/image13.png [('from', [('col', '8'), ('colOff', '58489'), ('row', '358'), ('rowOff', '30772')]), ('to', [('col', '10'), ('colOff', '2106706'), ('row', '382'), ('rowOff', '1378324')])]
+xl/media/image14.png [('from', [('col', '0'), ('colOff', '50595'), ('row', '358'), ('rowOff', '37533')]), ('to', [('col', '2'), ('colOff', '2218763'), ('row', '382'), ('rowOff', '1389529')])]
+xl/media/image15.png [('from', [('col', '8'), ('colOff', '39223'), ('row', '437'), ('rowOff', '49049')]), ('to', [('col', '10'), ('colOff', '2073087'), ('row', '461'), ('rowOff', '123265')])]
+xl/media/image16.png [('from', [('col', '0'), ('colOff', '43795'), ('row', '462'), ('rowOff', '52161')]), ('to', [('col', '2'), ('colOff', '2196353'), ('row', '486'), ('rowOff', '134471')])]
+xl/media/image17.png [('from', [('col', '4'), ('colOff', '64910'), ('row', '462'), ('rowOff', '21252')]), ('to', [('col', '6'), ('colOff', '2050676'), ('row', '486'), ('rowOff', '168088')])]
+xl/media/image18.png [('from', [('col', '8'), ('colOff', '77029'), ('row', '462'), ('rowOff', '54736')]), ('to', [('col', '10'), ('colOff', '2084294'), ('row', '486'), ('rowOff', '145676')])]
+
+ niwas-finance
+printareas [('_xlnm.Print_Area', "'UTR Format'!$A$1:$D$313")]
+xl/media/image1.png [('from', [('col', '0'), ('colOff', '0'), ('row', '0'), ('rowOff', '0')]), ('to', [('col', '1'), ('colOff', '312153'), ('row', '1'), ('rowOff', '1557')])]
+xl/media/image10.jpeg [('from', [('col', '1'), ('colOff', '2909590'), ('row', '219'), ('rowOff', '34562')]), ('to', [('col', '3'), ('colOff', '1507253'), ('row', '234'), ('rowOff', '177938')])]
+xl/media/image11.png [('from', [('col', '0'), ('colOff', '41868'), ('row', '235'), ('rowOff', '32661')]), ('to', [('col', '3'), ('colOff', '1496786'), ('row', '249'), ('rowOff', '188408')])]
+xl/media/image12.png [('from', [('col', '0'), ('colOff', '27210'), ('row', '250'), ('rowOff', '32661')]), ('to', [('col', '3'), ('colOff', '1496786'), ('row', '266'), ('rowOff', '177938')])]
+xl/media/image13.png [('from', [('col', '0'), ('colOff', '39187'), ('row', '268'), ('rowOff', '31934')]), ('to', [('col', '3'), ('colOff', '1475852'), ('row', '282'), ('rowOff', '177938')])]
+xl/media/image14.png [('from', [('col', '0'), ('colOff', '38153'), ('row', '283'), ('rowOff', '27388')]), ('to', [('col', '3'), ('colOff', '1486319'), ('row', '297'), ('rowOff', '188406')])]
+xl/media/image15.png [('from', [('col', '0'), ('colOff', '32958'), ('row', '298'), ('rowOff', '32963')]), ('to', [('col', '3'), ('colOff', '1496786'), ('row', '312'), ('rowOff', '177940')])]
+xl/media/image16.png [('from', [('col', '2'), ('colOff', '4166'), ('row', '205'), ('rowOff', '40468')]), ('to', [('col', '3'), ('colOff', '1496786'), ('row', '218'), ('rowOff', '188406')])]
+
+ smfg-lap
+word/media/image7.jpeg {'cx': '3193415', 'cy': '3114675'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '5245', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 2
+word/media/image9.jpeg {'cx': '6523990', 'cy': '3456940'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10490', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image10.jpeg {'cx': '6524625', 'cy': '2447925'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10490', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image11.jpeg {'cx': '6524625', 'cy': '2781300'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10490', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image12.png {'cx': '6400800', 'cy': '2619375'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10490', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image13.png {'cx': '6553200', 'cy': '2663190'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10490', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image14.png {'cx': '5943600', 'cy': '3096895'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10490', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+
+ smfg-rural-lap
+printareas [('_xlnm.Print_Area', 'Sheet1!$A$1:$F$277')]
+xl/media/image1.png [('from', [('col', '0'), ('colOff', '0'), ('row', '0'), ('rowOff', '0')]), ('to', [('col', '1'), ('colOff', '290280'), ('row', '4'), ('rowOff', '56642')])]
+xl/media/image2.png [('from', [('col', '0'), ('colOff', '24458'), ('row', '151'), ('rowOff', '31245')]), ('to', [('col', '5'), ('colOff', '1238250'), ('row', '163'), ('rowOff', '180975')])]
+xl/media/image10.jpeg [('from', [('col', '2'), ('colOff', '735338'), ('row', '205'), ('rowOff', '53350')]), ('to', [('col', '5'), ('colOff', '1238250'), ('row', '217'), ('rowOff', '209550')])]
+xl/media/image11.png [('from', [('col', '0'), ('colOff', '50752'), ('row', '218'), ('rowOff', '28436')]), ('to', [('col', '5'), ('colOff', '1219199'), ('row', '231'), ('rowOff', '190499')])]
+xl/media/image12.png [('from', [('col', '0'), ('colOff', '51299'), ('row', '232'), ('rowOff', '29777')]), ('to', [('col', '5'), ('colOff', '1238250'), ('row', '246'), ('rowOff', '180974')])]
+xl/media/image13.png [('from', [('col', '0'), ('colOff', '16328'), ('row', '247'), ('rowOff', '44102')]), ('to', [('col', '5'), ('colOff', '1247775'), ('row', '261'), ('rowOff', '152399')])]
+xl/media/image14.png [('from', [('col', '0'), ('colOff', '62037'), ('row', '262'), ('rowOff', '74941')]), ('to', [('col', '5'), ('colOff', '1247775'), ('row', '276'), ('rowOff', '180975')])]
+xl/media/image15.png [('from', [('col', '0'), ('colOff', '59890'), ('row', '276'), ('rowOff', '18193')]), ('to', [('col', '5'), ('colOff', '1219199'), ('row', '276'), ('rowOff', '2962275')])]
+
+ tyger-finance
+printareas [('_xlnm.Print_Area', 'Sheet1!$A$1:$F$257')]
+xl/media/image1.png [('from', [('col', '0'), ('colOff', '0'), ('row', '0'), ('rowOff', '28575')]), ('to', [('col', '0'), ('colOff', '922647'), ('row', '5'), ('rowOff', '77053')])]
+xl/media/image13.jpeg [('from', [('col', '4'), ('colOff', '20784'), ('row', '147'), ('rowOff', '18680')]), ('to', [('col', '5'), ('colOff', '885824'), ('row', '160'), ('rowOff', '180975')])]
+xl/media/image14.png [('from', [('col', '0'), ('colOff', '1775'), ('row', '180'), ('rowOff', '23538')]), ('to', [('col', '5'), ('colOff', '895350'), ('row', '195'), ('rowOff', '190500')])]
+xl/media/image15.png [('from', [('col', '0'), ('colOff', '15177'), ('row', '162'), ('rowOff', '17166')]), ('to', [('col', '5'), ('colOff', '885824'), ('row', '178'), ('rowOff', '180975')])]
+xl/media/image16.png [('from', [('col', '0'), ('colOff', '0'), ('row', '197'), ('rowOff', '16538')]), ('to', [('col', '5'), ('colOff', '885825'), ('row', '212'), ('rowOff', '0')])]
+xl/media/image17.png [('from', [('col', '0'), ('colOff', '0'), ('row', '212'), ('rowOff', '15686')]), ('to', [('col', '5'), ('colOff', '885825'), ('row', '227'), ('rowOff', '0')])]
+xl/media/image18.png [('from', [('col', '0'), ('colOff', '194'), ('row', '227'), ('rowOff', '32146')]), ('to', [('col', '5'), ('colOff', '876300'), ('row', '242'), ('rowOff', '0')])]
+xl/media/image19.png [('from', [('col', '0'), ('colOff', '9676'), ('row', '242'), ('rowOff', '28067')]), ('to', [('col', '5'), ('colOff', '876300'), ('row', '256'), ('rowOff', '180974')])]
+
+ ugrow
+printareas [('_xlnm.Print_Area', "'Modified Format'!$A$1:$E$248")]
+xl/media/image1.png [('from', [('col', '0'), ('colOff', '0'), ('row', '0'), ('rowOff', '0')]), ('to', [('col', '1'), ('colOff', '167640'), ('row', '1'), ('rowOff', '220980')])]
+xl/media/image10.png [('from', [('col', '0'), ('colOff', '0'), ('row', '163'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '1362075'), ('row', '178'), ('rowOff', '180975')])]
+xl/media/image11.png [('from', [('col', '0'), ('colOff', '1'), ('row', '179'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '1343026'), ('row', '194'), ('rowOff', '180975')])]
+xl/media/image12.png [('from', [('col', '0'), ('colOff', '0'), ('row', '195'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '1362075'), ('row', '209'), ('rowOff', '161925')])]
+xl/media/image13.png [('from', [('col', '0'), ('colOff', '0'), ('row', '210'), ('rowOff', '1')]), ('to', [('col', '2'), ('colOff', '704850'), ('row', '224'), ('rowOff', '76201')])]
+xl/media/image14.png [('from', [('col', '2'), ('colOff', '771525'), ('row', '210'), ('rowOff', '0')]), ('to', [('col', '4'), ('colOff', '1362075'), ('row', '224'), ('rowOff', '0')])]
+xl/media/image15.png [('from', [('col', '0'), ('colOff', '1'), ('row', '224'), ('rowOff', '19050')]), ('to', [('col', '4'), ('colOff', '1323976'), ('row', '236'), ('rowOff', '114300')])]
+xl/media/image16.png [('from', [('col', '0'), ('colOff', '66675'), ('row', '236'), ('rowOff', '9525')]), ('to', [('col', '4'), ('colOff', '1362075'), ('row', '237'), ('rowOff', '3286125')])]
+xl/media/image17.png [('from', [('col', '3'), ('colOff', '400048'), ('row', '149'), ('rowOff', '38101')]), ('to', [('col', '4'), ('colOff', '1381125'), ('row', '161'), ('rowOff', '171450')])]
+
+ ummeed
+word/media/image1.png {'cx': '5943600', 'cy': '3195320'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10176', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image2.png {'cx': '5943600', 'cy': '3190875'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10176', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image3.png {'cx': '5943600', 'cy': '2887980'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10176', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image4.png {'cx': '5943600', 'cy': '2734310'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10176', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image5.png {'cx': '5943600', 'cy': '3046095'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10176', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image6.png {'cx': '5943600', 'cy': '2740025'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '10176', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 1
+word/media/image15.jpeg {'cx': '2128962', 'cy': '2305878'} cell {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w': '3570', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type': 'dxa'} rowcells 3
+
+ kreditbee
+printareas [('_xlnm.Print_Area', 'Individual!$A$1:$K$265')]
+xl/media/image1.png [('from', [('col', '0'), ('colOff', '395941'), ('row', '0'), ('rowOff', '134471')]), ('to', [('col', '7'), ('colOff', '971176'), ('row', '0'), ('rowOff', '1718235')])]
+xl/media/image17.png [('from', [('col', '12'), ('colOff', '143202'), ('row', '265'), ('rowOff', '0')]), ('to', [('col', '12'), ('colOff', '143562'), ('row', '265'), ('rowOff', '86')])]
+xl/media/image8.jpeg [('from', [('col', '0'), ('colOff', '0'), ('row', '179'), ('rowOff', '233251')]), ('to', [('col', '3'), ('colOff', '1759857'), ('row', '196'), ('rowOff', '235856')])]
+xl/media/image11.png [('from', [('col', '0'), ('colOff', '0'), ('row', '126'), ('rowOff', '406730')]), ('to', [('col', '11'), ('colOff', '9071'), ('row', '146'), ('rowOff', '217715')])]
+xl/media/image12.png [('from', [('col', '0'), ('colOff', '0'), ('row', '197'), ('rowOff', '34963')]), ('to', [('col', '10'), ('colOff', '1895929'), ('row', '214'), ('rowOff', '208643')])]
+xl/media/image13.png [('from', [('col', '0'), ('colOff', '0'), ('row', '215'), ('rowOff', '18998')]), ('to', [('col', '10'), ('colOff', '1877786'), ('row', '233'), ('rowOff', '36286')])]
+xl/media/image14.png [('from', [('col', '0'), ('colOff', '0'), ('row', '233'), ('rowOff', '46194')]), ('to', [('col', '10'), ('colOff', '1850572'), ('row', '248'), ('rowOff', '208643')])]
+
+ veritas
+word/media/image1.png {'cx': '7552435', 'cy': '10527788'} cell  rowcells 0
+word/media/image3.png {'cx': '2235200', 'cy': '1949450'} cell  rowcells 3
+word/media/image2.png {'cx': '2044700', 'cy': '1930400'} cell  rowcells 3
+word/media/image5.png {'cx': '2222500', 'cy': '1930400'} cell  rowcells 3
+word/media/image4.png {'cx': '2158365', 'cy': '1612900'} cell  rowcells 3
+word/media/image7.png {'cx': '2051050', 'cy': '2025650'} cell  rowcells 3
+word/media/image6.png {'cx': '2181860', 'cy': '2032000'} cell  rowcells 3
+word/media/image9.png {'cx': '2181860', 'cy': '2222500'} cell  rowcells 3
+word/media/image8.png {'cx': '2038350', 'cy': '2228850'} cell  rowcells 3
+word/media/image12.png {'cx': '2158365', 'cy': '2209800'} cell  rowcells 3
+word/media/image10.png {'cx': '2181860', 'cy': '1955800'} cell  rowcells 3
+word/media/image11.png {'cx': '1978025', 'cy': '1987550'} cell  rowcells 3
+word/media/image13.png {'cx': '2190115', 'cy': '2012950'} cell  rowcells 3
+word/media/image14.png {'cx': '6843395', 'cy': '3522345'} cell  rowcells 1
+word/media/image15.png {'cx': '6843395', 'cy': '2120900'} cell  rowcells 1
+word/media/image16.png {'cx': '6843395', 'cy': '3623310'} cell  rowcells 1
+word/media/image17.png {'cx': '6843395', 'cy': '3862705'} cell  rowcells 1
+word/media/image18.png {'cx': '6843395', 'cy': '3836035'} cell  rowcells 0
+word/media/image19.png {'cx': '6843395', 'cy': '5375275'} cell  rowcells 0

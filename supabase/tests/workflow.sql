@@ -1,0 +1,71 @@
+-- Transaction-only tests using existing profiles. No users, cases, or files persist.
+BEGIN;
+SELECT set_config('hem.qa_owner',(SELECT id::text FROM public.users WHERE role='owner' AND is_active LIMIT 1),true);
+SELECT set_config('hem.qa_agent',(SELECT id::text FROM public.users WHERE role='field_agent' AND is_active LIMIT 1),true);
+SELECT set_config('hem.qa_case',gen_random_uuid()::text,true);
+SELECT set_config('hem.qa_hidden',gen_random_uuid()::text,true);
+INSERT INTO public.cases(id,created_by,assigned_to,status,applicant_name,application_number,extracted_data)
+VALUES(current_setting('hem.qa_case')::uuid,current_setting('hem.qa_owner')::uuid,current_setting('hem.qa_agent')::uuid,'assigned','QA rollback only','QA-ROLLBACK','{}'),
+(current_setting('hem.qa_hidden')::uuid,current_setting('hem.qa_owner')::uuid,NULL,'new','QA hidden rollback','QA-HIDDEN','{}');
+INSERT INTO storage.objects(bucket_id,name) VALUES('reports',current_setting('hem.qa_case')||'/rollback-only.pdf'),('reports',current_setting('hem.qa_case')||'/rollback-only-2.pdf');
+SELECT set_config('request.jwt.claims',jsonb_build_object('sub',current_setting('hem.qa_agent'),'role','authenticated')::text,true);
+SET LOCAL ROLE authenticated;
+DO $$ DECLARE c public.cases; blocked boolean; payload jsonb; cid uuid:=current_setting('hem.qa_case')::uuid; BEGIN
+ ASSERT public.hem_active() AND NOT public.hem_admin(), 'Agent must not inherit admin access from Valuation department';
+ ASSERT NOT EXISTS(SELECT 1 FROM public.cases WHERE id=current_setting('hem.qa_hidden')::uuid), 'Unrelated case leaked';
+ SELECT * INTO c FROM public.save_case_data(cid,'{"remarks_and_violations":"QA"}',0);
+ ASSERT c.status='in_progress' AND c.revision=1, 'Draft must advance and increment revision';
+ blocked:=false; BEGIN PERFORM public.save_case_data(cid,'{}',0); EXCEPTION WHEN serialization_failure THEN blocked:=true; END;
+ ASSERT blocked, 'Stale write accepted';
+ blocked:=false; BEGIN PERFORM public.transition_case(cid,'field_visit_done',c.revision); EXCEPTION WHEN raise_exception THEN blocked:=true; END;
+ ASSERT blocked, 'Incomplete dossier submitted';
+ blocked:=false; BEGIN UPDATE public.cases SET applicant_name='Invalid' WHERE id=cid; EXCEPTION WHEN raise_exception THEN blocked:=true; END;
+ ASSERT blocked, 'Agent changed administrative case headers';
+ SELECT jsonb_object_agg(k,'QA'::text) INTO payload FROM unnest(public.hem_submission_missing(cid,'{}')) k;
+ payload:=payload||'{"no_of_floors":"0"}'::jsonb;
+ INSERT INTO public.case_location(case_id,latitude,longitude) VALUES(cid,13.08,80.27);
+ INSERT INTO public.case_photos(case_id,photo_type,file_url) VALUES(cid,'QA','https://example.invalid/qa.jpg');
+ INSERT INTO public.case_documents(case_id,document_type,file_name,file_url) VALUES(cid,'Sale Deed','QA.pdf','https://example.invalid/qa.pdf');
+ SELECT * INTO c FROM public.cases WHERE id=cid;
+ SELECT * INTO c FROM public.save_case_data(cid,payload,c.revision,true);
+ ASSERT c.status='field_visit_done' AND c.submitted_at IS NOT NULL, 'Field submission failed';
+ ASSERT NOT public.hem_case_edit(cid), 'Submitted field dossier still editable by agent';
+ blocked:=false; BEGIN PERFORM public.transition_case(cid,'report_drafted',c.revision); EXCEPTION WHEN raise_exception THEN blocked:=true; END;
+ ASSERT blocked, 'Agent drafted report';
+END $$;
+RESET ROLE;
+SELECT set_config('request.jwt.claims',jsonb_build_object('sub',current_setting('hem.qa_owner'),'role','authenticated')::text,true);
+SET LOCAL ROLE authenticated;
+DO $$ DECLARE c public.cases; blocked boolean; rid uuid; cid uuid:=current_setting('hem.qa_case')::uuid; BEGIN
+ SELECT * INTO c FROM public.cases WHERE id=cid;
+ rid:=public.record_case_report(cid,'generic',cid||'/rollback-only.pdf','{}',repeat('a',64),c.revision);
+ SELECT * INTO c FROM public.cases WHERE id=cid;
+ ASSERT c.status='report_drafted' AND rid IS NOT NULL, 'Saved report did not advance workflow';
+ SELECT * INTO c FROM public.transition_case(cid,'in_review',c.revision);
+ blocked:=false; BEGIN PERFORM public.save_case_data(cid,'{"branch":"Invalid"}',c.revision); EXCEPTION WHEN insufficient_privilege THEN blocked:=true; END;
+ ASSERT blocked, 'Data changed during review';
+ SELECT * INTO c FROM public.transition_case(cid,'report_drafted',c.revision);
+ SELECT * INTO c FROM public.save_case_data(cid,'{"remarks_and_violations":"Revised"}',c.revision);
+ ASSERT c.status='field_visit_done', 'Editing did not invalidate the draft';
+ blocked:=false; BEGIN PERFORM public.transition_case(cid,'report_drafted',c.revision); EXCEPTION WHEN raise_exception THEN blocked:=true; END;
+ ASSERT blocked, 'Stale report accepted after dossier edit';
+ rid:=public.record_case_report(cid,'generic',cid||'/rollback-only-2.pdf','{}',repeat('b',64),c.revision);
+ SELECT * INTO c FROM public.cases WHERE id=cid;
+ SELECT * INTO c FROM public.transition_case(cid,'in_review',c.revision);
+ SELECT * INTO c FROM public.transition_case(cid,'reviewed',c.revision);
+ SELECT * INTO c FROM public.transition_case(cid,'completed',c.revision);
+ ASSERT c.completed_at IS NOT NULL, 'Completion timestamp missing';
+ blocked:=false; BEGIN PERFORM public.transition_case(cid,'in_progress',c.revision); EXCEPTION WHEN raise_exception THEN blocked:=true; END;
+ ASSERT blocked, 'Completed case reopened';
+ ASSERT (SELECT count(*) FROM public.case_reports WHERE case_id=cid)=2, 'Report versions lost';
+ ASSERT (SELECT count(*) FROM public.case_events WHERE case_id=cid)>=9, 'Audit trail incomplete';
+END $$;
+RESET ROLE;
+SET LOCAL ROLE anon;
+DO $$ BEGIN
+ ASSERT NOT EXISTS(SELECT 1 FROM public.cases), 'Anonymous case access';
+ ASSERT NOT EXISTS(SELECT 1 FROM public.users), 'Anonymous profile access';
+END $$;
+RESET ROLE;
+SELECT 'PASS: workflow, RLS, concurrency, reports, audit, read-only completion' AS result;
+ROLLBACK;

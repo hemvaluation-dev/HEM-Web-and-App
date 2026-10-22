@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ad797775-4ecc-4260-b0f4-f662cb3f71b8",
+    "name": "Aditya Birla Capital – LAP Valuation",
+    "template_name": "aditya_birla_lap"
+  },
+  {
+    "id": "32a58509-4077-47cd-ac41-eb180fca175a",
+    "name": "Axis Finance – LAP Valuation Report",
+    "template_name": "axis_finance"
+  },
+  {
+    "id": "e4160021-5613-4a99-a815-de12ad75c497",
+    "name": "Cholamandalam – SME Valuation Report",
+    "template_name": "chola_sme"
+  },
+  {
+    "id": "d87812e4-42d4-45dc-9a4e-637b3b68a65a",
+    "name": "Equitas Small Finance Bank – Technical Report",
+    "template_name": "equitas"
+  },
+  {
+    "id": "25bb04a3-29fa-41f8-9a52-96f5ea4682e5",
+    "name": "ICICI Bank – Individual Technical Report",
+    "template_name": "icici"
+  },
+  {
+    "id": "52847114-d580-4186-b360-ce53ae599129",
+    "name": "JM Finance – Retail Technical Valuation",
+    "template_name": "jm_finance"
+  },
+  {
+    "id": "105f1e23-30e4-49fb-b920-57ea58949194",
+    "name": "KreditBee – Valuation Report",
+    "template_name": "kreditbee"
+  },
+  {
+    "id": "7aa1dd07-5a8e-4ae5-aba4-7d22be77e2e2",
+    "name": "Niwas Housing Finance – UTR Valuation",
+    "template_name": "niwas_finance"
+  },
+  {
+    "id": "4b37d3b1-8263-445d-9097-6c191947859e",
+    "name": "SMFG India Credit – Micro LAP Valuation",
+    "template_name": "smfg_lap"
+  },
+  {
+    "id": "d81614aa-8671-4e84-a742-bd24a1c1ed5c",
+    "name": "SMFG India Credit – Rural LAP Valuation",
+    "template_name": "smfg_rural_lap"
+  },
+  {
+    "id": "3b5fc4f8-cf45-47f6-9f11-9735b2acfb81",
+    "name": "Tyger Home Finance – Valuation Report",
+    "template_name": "tyger_finance"
+  },
+  {
+    "id": "7d1e49fc-fdd9-4412-98c2-adcb44f5c815",
+    "name": "UGRO Capital – Valuation Report",
+    "template_name": "ugrow"
+  },
+  {
+    "id": "3bd0b964-2826-4f86-8ef8-cdad5ab8c51d",
+    "name": "Ummeed Housing Finance – Valuation Report",
+    "template_name": "ummeed"
+  },
+  {
+    "id": "4ebdb4e0-23f5-4bb6-af2b-932ecb7e876b",
+    "name": "Veritas – Valuation Report",
+    "template_name": "veritas"
+  }
+]

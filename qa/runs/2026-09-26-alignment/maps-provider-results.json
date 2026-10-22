@@ -1,0 +1,21 @@
+[
+  {
+    "action": "reverse_geocode",
+    "httpStatus": 200,
+    "providerStatus": "REQUEST_DENIED",
+    "message": "The provided API key is invalid. ",
+    "pass": false
+  },
+  {
+    "action": "nearby_places",
+    "httpStatus": 200,
+    "providerStatus": "REQUEST_DENIED",
+    "message": "The provided API key is invalid.",
+    "pass": false
+  },
+  {
+    "action": "static_map",
+    "httpStatus": 403,
+    "pass": false
+  }
+]

@@ -1,0 +1,52 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor & IDE
+.vscode/
+.idea/
+
+# Python / Report Engine Sidecar
+__pycache__/
+*.py[cod]
+*$py.class
+report-engine/tmp/
+report-engine/logs/
+*.log
+
+# Next.js Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+# Keep .env.example so developers know what vars are needed
+!frontend/.env.example
+
+# Flutter App
+flutter_app/.dart_tool/
+flutter_app/build/
+flutter_app/.flutter-plugins
+flutter_app/.flutter-plugins-dependencies
+
+# Old scratch / test scripts
+scratch_*
+parse_docx.cjs
+parse_xlsx.cjs
+test_*.js
+add_column_fixed.js
+.vercel
+
+# Reproducible QA report exports (retain fixtures, audits and source templates)
+qa/runs/*/reports/
+qa/runs/*/generated/reports/
+
+# Push configuration and server credentials (supply locally / encrypted secrets)
+**/google-services.json
+**/GoogleService-Info.plist
+**/*service-account*.json
+**/*firebase-adminsdk*.json
+supabase/.env.*.local
+.secrets/

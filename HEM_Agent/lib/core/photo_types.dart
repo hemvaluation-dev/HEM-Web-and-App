@@ -1,0 +1,32 @@
+// Keep aligned with the portal photo catalog; existing saved labels remain valid.
+const photoTypes = <String>[
+  'Elevation Photo',
+  'Road Photo',
+  'Road Photo with Property Elevation',
+  'Bedroom',
+  'Hall',
+  'Kitchen',
+  'Set Back Photos',
+  'East Boundary Photo',
+  'West Boundary Photo',
+  'North Boundary Photo',
+  'South Boundary Photo',
+  'Selfie',
+  'Power Bill',
+  'Meter',
+  'Property Document',
+  'Others - Screenshots',
+  'Others - Map Screenshot',
+  'Others - Route Sketch',
+  'Others - Satellite View',
+  'Others - Cadastral / BhuNaksha Map',
+  'Others - Government Rate Screenshot',
+  'Others - Prohibited Property Screenshot',
+  'Others - Electricity Bill Screenshot',
+  'Others - Property Tax Screenshot',
+  'Others - Approved Plan / Layout',
+  'Others - Document Screenshot',
+  'Other',
+];
+
+bool isScreenshotType(String value) => value.startsWith('Others -');

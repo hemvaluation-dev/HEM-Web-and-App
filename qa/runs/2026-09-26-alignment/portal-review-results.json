@@ -1,0 +1,11 @@
+{
+  "reference": "QA-20260926-VERITAS",
+  "verifiedTransitions": [
+    "report_drafted",
+    "in_review",
+    "reviewed",
+    "completed"
+  ],
+  "method": "owner portal UI",
+  "screenshot": "portal-completed-case.png"
+}

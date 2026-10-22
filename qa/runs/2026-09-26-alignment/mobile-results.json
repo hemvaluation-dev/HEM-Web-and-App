@@ -1,0 +1,324 @@
+{
+  "checks": [
+    {
+      "name": "Signed-in app startup",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile screen summary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile screen /location",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile screen /documents",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile screen /photos",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile screen /media",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile screen /review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UMMEED private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UMMEED canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UMMEED field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UMMEED agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-KREDITBEE private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-KREDITBEE canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-KREDITBEE field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-KREDITBEE agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-VERITAS private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-VERITAS canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-VERITAS field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-VERITAS agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ADITYA private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ADITYA canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ADITYA field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ADITYA agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-AXIS private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-AXIS canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-AXIS field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-AXIS agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-CHOLA private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-CHOLA canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-CHOLA field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-CHOLA agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-EQUITAS private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-EQUITAS canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-EQUITAS field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-EQUITAS agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ICICI private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ICICI canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ICICI field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ICICI agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-JM private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-JM canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-JM field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-JM agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-NIWAS private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-NIWAS canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-NIWAS field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-NIWAS agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-TYGER private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-TYGER canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-TYGER field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-TYGER agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UGROW private photo access",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UGROW canonical submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UGROW field editing locked after submission",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UGROW agent cannot generate valuation report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Geocoding rejects invalid coordinates",
+      "pass": true,
+      "detail": 400
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "project": "osvuyzhaucjrtdhqrmlx.supabase.co",
+  "generatedAt": "2026-09-27T16:45:21.200Z",
+  "tables": {
+    "users": {
+      "present": true,
+      "missing": [],
+      "extra": [
+        "auth_id",
+        "phone",
+        "address",
+        "created_at",
+        "reporting_manager",
+        "state"
+      ],
+      "actual": [
+        "id",
+        "auth_id",
+        "email",
+        "full_name",
+        "phone",
+        "address",
+        "role",
+        "department",
+        "level",
+        "is_active",
+        "created_at",
+        "reporting_manager",
+        "state"
+      ]
+    },
+    "clients": {
+      "present": true,
+      "missing": [],
+      "extra": [
+        "created_at"
+      ],
+      "actual": [
+        "id",
+        "name",
+        "template_name",
+        "created_at"
+      ]
+    },
+    "cases": {
+      "present": true,
+      "missing": [],
+      "extra": [],
+      "actual": [
+        "id",
+        "application_number",
+        "applicant_name",
+        "phone_number",
+        "address",
+        "property_type",
+        "client_id",
+        "assigned_to",
+        "reviewer_id",
+        "created_by",
+        "status",
+        "extracted_data",
+        "created_at",
+        "updated_at",
+        "valuator_id",
+        "deadline_date",
+        "state",
+        "idempotency_key",
+        "case_type",
+        "revision",
+        "submitted_at",
+        "report_drafted_at",
+        "reviewed_at",
+        "completed_at",
+        "branch"
+      ]
+    },
+    "case_photos": {
+      "present": true,
+      "missing": [],
+      "extra": [],
+      "actual": [
+        "id",
+        "case_id",
+        "photo_type",
+        "file_url",
+        "original_file_url",
+        "latitude",
+        "longitude",
+        "created_at"
+      ]
+    },
+    "case_documents": {
+      "present": true,
+      "missing": [],
+      "extra": [],
+      "actual": [
+        "id",
+        "case_id",
+        "document_type",
+        "file_url",
+        "file_name",
+        "extracted_data",
+        "created_at"
+      ]
+    },
+    "case_location": {
+      "present": true,
+      "missing": [
+        "address"
+      ],
+      "extra": [
+        "nearest_highway"
+      ],
+      "actual": [
+        "id",
+        "case_id",
+        "latitude",
+        "longitude",
+        "accuracy",
+        "address_from_gps",
+        "city",
+        "state",
+        "pincode",
+        "nearest_bus_stop",
+        "nearest_railway",
+        "nearest_hospital",
+        "nearest_airport",
+        "nearest_highway",
+        "nearest_park",
+        "created_at",
+        "altitude"
+      ]
+    },
+    "case_field_data": {
+      "present": true,
+      "missing": [],
+      "extra": [
+        "id",
+        "property_address",
+        "property_type",
+        "owner_name",
+        "occupancy_status",
+        "age_of_building",
+        "number_of_floors",
+        "built_up_area",
+        "carpet_area",
+        "land_area",
+        "construction_type",
+        "roof_type",
+        "flooring_type",
+        "wiring_type",
+        "plumbing_type",
+        "interior_condition",
+        "exterior_condition",
+        "structural_faults",
+        "boundary_wall",
+        "gate_type",
+        "water_supply",
+        "electricity_supply",
+        "drainage_system",
+        "neighborhood_type",
+        "road_width",
+        "road_type",
+        "market_value_estimate",
+        "forced_sale_value",
+        "rent_estimate",
+        "remarks",
+        "data",
+        "updated_at"
+      ],
+      "actual": [
+        "id",
+        "case_id",
+        "property_address",
+        "property_type",
+        "owner_name",
+        "occupancy_status",
+        "age_of_building",
+        "number_of_floors",
+        "built_up_area",
+        "carpet_area",
+        "land_area",
+        "construction_type",
+        "roof_type",
+        "flooring_type",
+        "wiring_type",
+        "plumbing_type",
+        "interior_condition",
+        "exterior_condition",
+        "structural_faults",
+        "boundary_wall",
+        "gate_type",
+        "water_supply",
+        "electricity_supply",
+        "drainage_system",
+        "neighborhood_type",
+        "road_width",
+        "road_type",
+        "market_value_estimate",
+        "forced_sale_value",
+        "rent_estimate",
+        "remarks",
+        "data",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "case_reports": {
+      "present": true,
+      "missing": [],
+      "extra": [],
+      "actual": [
+        "id",
+        "case_id",
+        "template_id",
+        "storage_path",
+        "data_snapshot",
+        "created_by",
+        "created_at",
+        "case_revision",
+        "sha256"
+      ]
+    },
+    "case_events": {
+      "present": true,
+      "missing": [],
+      "extra": [],
+      "actual": [
+        "id",
+        "case_id",
+        "actor_id",
+        "event_type",
+        "old_status",
+        "new_status",
+        "created_at"
+      ]
+    }
+  }
+}

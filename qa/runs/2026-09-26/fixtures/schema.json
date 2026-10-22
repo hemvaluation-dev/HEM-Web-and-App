@@ -1,0 +1,529 @@
+{
+  "cases": {
+    "required": [
+      "id"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "client_id": {
+        "description": "Note:\nThis is a Foreign Key to `clients.id`.<fk table='clients' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "created_by": {
+        "description": "Note:\nThis is a Foreign Key to `users.id`.<fk table='users' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "assigned_to": {
+        "description": "Note:\nThis is a Foreign Key to `users.id`.<fk table='users' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "reviewer_id": {
+        "description": "Note:\nThis is a Foreign Key to `users.id`.<fk table='users' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "valuator_id": {
+        "description": "Note:\nThis is a Foreign Key to `users.id`.<fk table='users' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "idempotency_key": {
+        "format": "text",
+        "type": "string"
+      },
+      "status": {
+        "default": "draft",
+        "format": "text",
+        "type": "string"
+      },
+      "application_number": {
+        "format": "text",
+        "type": "string"
+      },
+      "applicant_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "phone_number": {
+        "format": "text",
+        "type": "string"
+      },
+      "address": {
+        "format": "text",
+        "type": "string"
+      },
+      "property_type": {
+        "format": "text",
+        "type": "string"
+      },
+      "state": {
+        "format": "text",
+        "type": "string"
+      },
+      "branch": {
+        "format": "text",
+        "type": "string"
+      },
+      "extracted_data": {
+        "format": "jsonb"
+      },
+      "submitted_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "deadline_date": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "case_photos": {
+    "required": [
+      "id",
+      "file_url"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "case_id": {
+        "description": "Note:\nThis is a Foreign Key to `cases.id`.<fk table='cases' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "photo_type": {
+        "format": "text",
+        "type": "string"
+      },
+      "file_url": {
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "latitude": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "longitude": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "original_file_url": {
+        "format": "text",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "case_documents": {
+    "required": [
+      "id",
+      "file_url"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "case_id": {
+        "description": "Note:\nThis is a Foreign Key to `cases.id`.<fk table='cases' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "document_type": {
+        "format": "text",
+        "type": "string"
+      },
+      "file_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "file_url": {
+        "format": "text",
+        "type": "string"
+      },
+      "extracted_data": {
+        "format": "jsonb"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "case_field_data": {
+    "required": [
+      "case_id"
+    ],
+    "properties": {
+      "case_id": {
+        "description": "Note:\nThis is a Primary Key.<pk/>\nThis is a Foreign Key to `cases.id`.<fk table='cases' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "phone_number": {
+        "format": "text",
+        "type": "string"
+      },
+      "person_met_at_site": {
+        "format": "text",
+        "type": "string"
+      },
+      "relationship_with_customer": {
+        "format": "text",
+        "type": "string"
+      },
+      "visit_date": {
+        "format": "text",
+        "type": "string"
+      },
+      "applicant_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "owner_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "property_type": {
+        "format": "text",
+        "type": "string"
+      },
+      "distance_from_branch": {
+        "format": "text",
+        "type": "string"
+      },
+      "previous_valuation": {
+        "format": "text",
+        "type": "string"
+      },
+      "ownership_type": {
+        "format": "text",
+        "type": "string"
+      },
+      "property_documents_verified": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_document_east": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_document_west": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_document_north": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_document_south": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_physical_east": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_physical_west": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_physical_north": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_physical_south": {
+        "format": "text",
+        "type": "string"
+      },
+      "boundaries_matching": {
+        "format": "text",
+        "type": "string"
+      },
+      "setback_front": {
+        "format": "text",
+        "type": "string"
+      },
+      "setback_rear": {
+        "format": "text",
+        "type": "string"
+      },
+      "setback_right": {
+        "format": "text",
+        "type": "string"
+      },
+      "setback_left": {
+        "format": "text",
+        "type": "string"
+      },
+      "land_measurements_east": {
+        "format": "text",
+        "type": "string"
+      },
+      "land_measurements_west": {
+        "format": "text",
+        "type": "string"
+      },
+      "land_measurements_north": {
+        "format": "text",
+        "type": "string"
+      },
+      "land_measurements_south": {
+        "format": "text",
+        "type": "string"
+      },
+      "plinth_measurements_east": {
+        "format": "text",
+        "type": "string"
+      },
+      "plinth_measurements_west": {
+        "format": "text",
+        "type": "string"
+      },
+      "plinth_measurements_north": {
+        "format": "text",
+        "type": "string"
+      },
+      "plinth_measurements_south": {
+        "format": "text",
+        "type": "string"
+      },
+      "slab_measurements_east": {
+        "format": "text",
+        "type": "string"
+      },
+      "slab_measurements_west": {
+        "format": "text",
+        "type": "string"
+      },
+      "slab_measurements_north": {
+        "format": "text",
+        "type": "string"
+      },
+      "slab_measurements_south": {
+        "format": "text",
+        "type": "string"
+      },
+      "no_of_floors": {
+        "format": "text",
+        "type": "string"
+      },
+      "floor_valued": {
+        "format": "text",
+        "type": "string"
+      },
+      "no_of_units": {
+        "format": "text",
+        "type": "string"
+      },
+      "age_of_property": {
+        "format": "text",
+        "type": "string"
+      },
+      "residual_life": {
+        "format": "text",
+        "type": "string"
+      },
+      "quality_of_construction": {
+        "format": "text",
+        "type": "string"
+      },
+      "interiors_exteriors": {
+        "format": "text",
+        "type": "string"
+      },
+      "class_of_locality": {
+        "format": "text",
+        "type": "string"
+      },
+      "site_developed": {
+        "format": "text",
+        "type": "string"
+      },
+      "proximity_amenities": {
+        "format": "text",
+        "type": "string"
+      },
+      "within_municipal_limits": {
+        "format": "text",
+        "type": "string"
+      },
+      "panchayat_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "site_access": {
+        "format": "text",
+        "type": "string"
+      },
+      "basic_amenities": {
+        "format": "text",
+        "type": "string"
+      },
+      "marketability": {
+        "format": "text",
+        "type": "string"
+      },
+      "high_tension_wires": {
+        "format": "text",
+        "type": "string"
+      },
+      "area_left_for_cross": {
+        "format": "text",
+        "type": "string"
+      },
+      "joint_wall_slab": {
+        "format": "text",
+        "type": "string"
+      },
+      "graveyard_nearby": {
+        "format": "text",
+        "type": "string"
+      },
+      "land_area": {
+        "format": "text",
+        "type": "string"
+      },
+      "land_rate": {
+        "format": "text",
+        "type": "string"
+      },
+      "bua": {
+        "format": "text",
+        "type": "string"
+      },
+      "construction_rate": {
+        "format": "text",
+        "type": "string"
+      },
+      "stage_of_construction": {
+        "format": "text",
+        "type": "string"
+      },
+      "stage_percentage": {
+        "format": "text",
+        "type": "string"
+      },
+      "recommended_percentage": {
+        "format": "text",
+        "type": "string"
+      },
+      "remarks_and_violations": {
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "case_location": {
+    "required": [
+      "id"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "case_id": {
+        "description": "Note:\nThis is a Foreign Key to `cases.id`.<fk table='cases' column='id'/>",
+        "format": "uuid",
+        "type": "string"
+      },
+      "latitude": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "longitude": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "address": {
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "altitude": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "accuracy": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "address_from_gps": {
+        "format": "text",
+        "type": "string"
+      },
+      "city": {
+        "format": "text",
+        "type": "string"
+      },
+      "state": {
+        "format": "text",
+        "type": "string"
+      },
+      "pincode": {
+        "format": "text",
+        "type": "string"
+      },
+      "nearest_bus_stop": {
+        "format": "text",
+        "type": "string"
+      },
+      "nearest_railway": {
+        "format": "text",
+        "type": "string"
+      },
+      "nearest_hospital": {
+        "format": "text",
+        "type": "string"
+      },
+      "nearest_airport": {
+        "format": "text",
+        "type": "string"
+      },
+      "nearest_highway": {
+        "format": "text",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  }
+}

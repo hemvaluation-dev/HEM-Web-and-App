@@ -1,0 +1,518 @@
+{
+  "checks": [
+    {
+      "name": "Authenticated app startup",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "All fourteen assigned QA cases are accessible",
+      "result": "PASS",
+      "detail": {
+        "count": 14
+      }
+    },
+    {
+      "name": "Agent authenticated case API search",
+      "result": "PASS",
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "API rejects invalid pagination",
+      "result": "PASS",
+      "detail": 400
+    },
+    {
+      "name": "API rejects unauthenticated access",
+      "result": "PASS",
+      "detail": 401
+    },
+    {
+      "name": "Agent cannot export users",
+      "result": "FAIL",
+      "detail": 404
+    },
+    {
+      "name": "Anonymous database cannot read QA cases",
+      "result": "FAIL",
+      "detail": {
+        "rows": 14
+      }
+    },
+    {
+      "name": "QA-20260926-VERITAS mobile details",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-VERITAS mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 17
+      }
+    },
+    {
+      "name": "QA-20260926-VERITAS mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-VERITAS data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-VERITAS authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 23763393,
+        "template": "veritas"
+      }
+    },
+    {
+      "name": "QA-20260926-UMMEED mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UMMEED mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 8
+      }
+    },
+    {
+      "name": "QA-20260926-UMMEED mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UMMEED data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UMMEED authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1390156,
+        "template": "ummeed"
+      }
+    },
+    {
+      "name": "QA-20260926-UGROW mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UGROW mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 8
+      }
+    },
+    {
+      "name": "QA-20260926-UGROW mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UGROW data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-UGROW authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1379775,
+        "template": "ugrow"
+      }
+    },
+    {
+      "name": "QA-20260926-TYGER mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-TYGER mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 11
+      }
+    },
+    {
+      "name": "QA-20260926-TYGER mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-TYGER data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-TYGER authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1892871,
+        "template": "tyger_finance"
+      }
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 7
+      }
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG-RURAL authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1211800,
+        "template": "smfg_rural_lap"
+      }
+    },
+    {
+      "name": "QA-20260926-SMFG mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 7
+      }
+    },
+    {
+      "name": "QA-20260926-SMFG mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-SMFG authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1247835,
+        "template": "smfg_lap"
+      }
+    },
+    {
+      "name": "QA-20260926-NIWAS mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-NIWAS mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 8
+      }
+    },
+    {
+      "name": "QA-20260926-NIWAS mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-NIWAS data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-NIWAS authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1386204,
+        "template": "niwas_finance"
+      }
+    },
+    {
+      "name": "QA-20260926-KREDITBEE mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-KREDITBEE mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 8
+      }
+    },
+    {
+      "name": "QA-20260926-KREDITBEE mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-KREDITBEE data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-KREDITBEE authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 2613245,
+        "template": "kreditbee"
+      }
+    },
+    {
+      "name": "QA-20260926-JM mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-JM mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 9
+      }
+    },
+    {
+      "name": "QA-20260926-JM mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-JM data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-JM authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1666357,
+        "template": "jm_finance"
+      }
+    },
+    {
+      "name": "QA-20260926-ICICI mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ICICI mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 3
+      }
+    },
+    {
+      "name": "QA-20260926-ICICI mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ICICI data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ICICI authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 551684,
+        "template": "icici"
+      }
+    },
+    {
+      "name": "QA-20260926-EQUITAS mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-EQUITAS mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 12
+      }
+    },
+    {
+      "name": "QA-20260926-EQUITAS mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-EQUITAS data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-EQUITAS authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 2067831,
+        "template": "equitas"
+      }
+    },
+    {
+      "name": "QA-20260926-CHOLA mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-CHOLA mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 10
+      }
+    },
+    {
+      "name": "QA-20260926-CHOLA mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-CHOLA data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-CHOLA authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1782810,
+        "template": "chola_sme"
+      }
+    },
+    {
+      "name": "QA-20260926-AXIS mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-AXIS mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 11
+      }
+    },
+    {
+      "name": "QA-20260926-AXIS mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-AXIS data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-AXIS authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1878441,
+        "template": "axis_finance"
+      }
+    },
+    {
+      "name": "QA-20260926-ADITYA mobile details",
+      "result": "FAIL",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ADITYA mobile persisted fields/photos",
+      "result": "PASS",
+      "detail": {
+        "photos": 6
+      }
+    },
+    {
+      "name": "QA-20260926-ADITYA mobile authenticated photo upload",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ADITYA data review screen",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "QA-20260926-ADITYA authenticated report generation",
+      "result": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 1121257,
+        "template": "aditya_birla_lap"
+      }
+    },
+    {
+      "name": "Mobile location screen renders",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Mobile documents screen renders",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Mobile photos screen renders",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Mobile media screen renders",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Mobile draft save persists",
+      "result": "PASS",
+      "detail": {
+        "status": "data_drafted",
+        "branch": "QA MOBILE EDIT"
+      }
+    },
+    {
+      "name": "Profile screen renders",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Leave screen renders",
+      "result": "PASS",
+      "detail": null
+    }
+  ],
+  "caseCount": 14
+}

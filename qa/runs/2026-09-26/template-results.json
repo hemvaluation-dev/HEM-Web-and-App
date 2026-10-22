@@ -1,0 +1,1590 @@
+[
+  {
+    "template": "veritas",
+    "kind": "docx",
+    "fields": 113,
+    "photos": 17,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "application_number",
+        "label": "Application number",
+        "expected": "QA-20260926-VERITAS"
+      },
+      {
+        "id": "branch",
+        "label": "Branch",
+        "expected": "QA Bengaluru"
+      },
+      {
+        "id": "product",
+        "label": "Product",
+        "expected": "QA 003"
+      },
+      {
+        "id": "inspected_by",
+        "label": "Inspected by",
+        "expected": "QA 008"
+      },
+      {
+        "id": "authorised_signature",
+        "label": "Authorised signature",
+        "expected": "QA 009"
+      },
+      {
+        "id": "document_holder_name",
+        "label": "Document holder name",
+        "expected": "QA Test Owner"
+      },
+      {
+        "id": "method_valuation",
+        "label": "Method of valuation",
+        "expected": "QA 013"
+      },
+      {
+        "id": "property_address",
+        "label": "Property address",
+        "expected": "QA ONLY Plot 17, Synthetic Layout, Bengaluru"
+      },
+      {
+        "id": "district",
+        "label": "District",
+        "expected": "Bengaluru"
+      },
+      {
+        "id": "state",
+        "label": "State",
+        "expected": "Karnataka"
+      },
+      {
+        "id": "pincode",
+        "label": "Pincode",
+        "expected": "560001"
+      },
+      {
+        "id": "latitude",
+        "label": "Latitude",
+        "expected": "12.9716"
+      },
+      {
+        "id": "longitude",
+        "label": "Longitude",
+        "expected": "77.5946"
+      },
+      {
+        "id": "nearest_landmark",
+        "label": "Nearest landmark",
+        "expected": "QA 020"
+      },
+      {
+        "id": "branch_distance",
+        "label": "Distance from nearest Veritas branch",
+        "expected": "QA Bengaluru"
+      },
+      {
+        "id": "civic_status",
+        "label": "Civic status",
+        "expected": "QA 022"
+      },
+      {
+        "id": "civic_status_other",
+        "label": "If others — civic status",
+        "expected": "QA 023"
+      },
+      {
+        "id": "nhb_1991",
+        "label": "NHB — 1991",
+        "expected": "QA 024"
+      },
+      {
+        "id": "nhb_2011",
+        "label": "NHB — 2011",
+        "expected": "QA 025"
+      },
+      {
+        "id": "owner_title_deed",
+        "label": "Owner's name as per title deed / document number",
+        "expected": "QA Test Owner"
+      },
+      {
+        "id": "title_deed_details",
+        "label": "Number of title deed involved with details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision."
+      },
+      {
+        "id": "ownership_type",
+        "label": "Ownership type",
+        "expected": "Free Hold"
+      },
+      {
+        "id": "occupancy",
+        "label": "Occupancy status",
+        "expected": "QA 031"
+      },
+      {
+        "id": "approved_plan",
+        "label": "Approved plan",
+        "expected": "QA 032"
+      },
+      {
+        "id": "deviation",
+        "label": "Deviation observed",
+        "expected": "QA 033"
+      },
+      {
+        "id": "floors",
+        "label": "Number of floors",
+        "expected": "QA 034"
+      },
+      {
+        "id": "residential_units",
+        "label": "Residential units",
+        "expected": "QA 035"
+      },
+      {
+        "id": "commercial_units",
+        "label": "Commercial units",
+        "expected": "QA 036"
+      },
+      {
+        "id": "total_units",
+        "label": "Total number of units",
+        "expected": "QA 037"
+      },
+      {
+        "id": "more_than_2_units",
+        "label": "More than 2 units (CRE)",
+        "expected": "QA 038"
+      },
+      {
+        "id": "property_identification",
+        "label": "Property identification",
+        "expected": "QA 039"
+      },
+      {
+        "id": "building_age",
+        "label": "Age of building",
+        "expected": "QA 041"
+      },
+      {
+        "id": "future_life",
+        "label": "Estimated future life",
+        "expected": "QA 042"
+      },
+      {
+        "id": "east_title",
+        "label": "East — as per title deed",
+        "expected": "QA boundary road"
+      },
+      {
+        "id": "east_actual",
+        "label": "East — as per actual",
+        "expected": "QA boundary road"
+      },
+      {
+        "id": "west_title",
+        "label": "West — as per title deed",
+        "expected": "QA boundary road"
+      },
+      {
+        "id": "west_actual",
+        "label": "West — as per actual",
+        "expected": "QA boundary road"
+      },
+      {
+        "id": "north_title",
+        "label": "North — as per title deed",
+        "expected": "QA boundary road"
+      },
+      {
+        "id": "north_actual",
+        "label": "North — as per actual",
+        "expected": "QA boundary road"
+      },
+      {
+        "id": "south_title",
+        "label": "South — as per title deed",
+        "expected": "QA boundary road"
+      },
+      {
+        "id": "south_actual",
+        "label": "South — as per actual",
+        "expected": "QA boundary road"
+      },
+      {
+        "id": "documents_list",
+        "label": "Documents given for site visit",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision."
+      },
+      {
+        "id": "purchase_property",
+        "label": "Whether property is a purchase property",
+        "expected": "QA 052"
+      },
+      {
+        "id": "agreement_between",
+        "label": "Agreement entered between",
+        "expected": "QA 053"
+      },
+      {
+        "id": "agreement_value",
+        "label": "Agreement value",
+        "expected": "4000"
+      },
+      {
+        "id": "agreement_validity",
+        "label": "Agreement validity",
+        "expected": "QA 056"
+      },
+      {
+        "id": "roof",
+        "label": "Roof",
+        "expected": "QA 057"
+      },
+      {
+        "id": "flooring",
+        "label": "Flooring",
+        "expected": "QA 058"
+      },
+      {
+        "id": "eb_service",
+        "label": "EB service number",
+        "expected": "QA 059"
+      },
+      {
+        "id": "meter_number",
+        "label": "Meter number",
+        "expected": "QA 060"
+      },
+      {
+        "id": "property_tax",
+        "label": "Property tax",
+        "expected": "QA 061"
+      },
+      {
+        "id": "plot_demarcated",
+        "label": "Plot demarcated",
+        "expected": "QA 062"
+      },
+      {
+        "id": "road_width",
+        "label": "Approximate road width",
+        "expected": "QA 063"
+      },
+      {
+        "id": "passage_less_10ft",
+        "label": "Passage less than 10ft",
+        "expected": "QA 064"
+      },
+      {
+        "id": "passage_width",
+        "label": "Passage width",
+        "expected": "QA 065"
+      },
+      {
+        "id": "distance_main_road",
+        "label": "Distance from abutting main road / street",
+        "expected": "QA 066"
+      },
+      {
+        "id": "locality",
+        "label": "Nature of locality",
+        "expected": "QA 067"
+      },
+      {
+        "id": "location_surrounding",
+        "label": "Location & surrounding",
+        "expected": "QA 068"
+      },
+      {
+        "id": "facilities",
+        "label": "Facility available",
+        "expected": "QA 069"
+      },
+      {
+        "id": "water_supply",
+        "label": "Water supply arrangement",
+        "expected": "QA 070"
+      },
+      {
+        "id": "drainage",
+        "label": "Drainage arrangement",
+        "expected": "QA 071"
+      },
+      {
+        "id": "condition",
+        "label": "Condition of property",
+        "expected": "QA 072"
+      },
+      {
+        "id": "rental_value",
+        "label": "Approximate rental value per month",
+        "expected": "4000"
+      },
+      {
+        "id": "land_sft",
+        "label": "Land in Sft",
+        "expected": "1200"
+      },
+      {
+        "id": "glv_sft_sro",
+        "label": "GLV/SFT wrt SRO rates",
+        "expected": "4000"
+      },
+      {
+        "id": "glv_land",
+        "label": "GLV of land",
+        "expected": "QA 076"
+      },
+      {
+        "id": "market_range_sft",
+        "label": "Market value range per SFT",
+        "expected": "4000"
+      },
+      {
+        "id": "rate_sft",
+        "label": "Rate per SQFT adopted",
+        "expected": "4000"
+      },
+      {
+        "id": "land_value",
+        "label": "Land value",
+        "expected": "4800000"
+      },
+      {
+        "id": "existing_bua",
+        "label": "Existing BUA",
+        "expected": "1200"
+      },
+      {
+        "id": "proposed_bua",
+        "label": "Proposed BUA",
+        "expected": "1200"
+      },
+      {
+        "id": "total_bua",
+        "label": "Total BUA",
+        "expected": "1200"
+      },
+      {
+        "id": "carpet_area",
+        "label": "Total carpet area",
+        "expected": "1200"
+      },
+      {
+        "id": "existing_building_value",
+        "label": "Existing building value",
+        "expected": "4800000"
+      },
+      {
+        "id": "proposed_building_value",
+        "label": "Proposed building value",
+        "expected": "4800000"
+      },
+      {
+        "id": "enhancement",
+        "label": "Enhancement / improvements",
+        "expected": "QA 086"
+      },
+      {
+        "id": "additional_cost",
+        "label": "Additional cost",
+        "expected": "4000"
+      },
+      {
+        "id": "total_building_value",
+        "label": "Total building value",
+        "expected": "3240000"
+      },
+      {
+        "id": "temp_existing_bua",
+        "label": "Temporary roof existing BUA",
+        "expected": "1200"
+      },
+      {
+        "id": "temp_carpet_area",
+        "label": "Temporary roof carpet area",
+        "expected": "1200"
+      },
+      {
+        "id": "temp_rate_sft",
+        "label": "Temporary roof rate per sqft",
+        "expected": "4000"
+      },
+      {
+        "id": "temp_existing_value",
+        "label": "Temporary roof existing building value",
+        "expected": "4800000"
+      },
+      {
+        "id": "temp_additional_cost",
+        "label": "Temporary roof additional cost",
+        "expected": "4000"
+      },
+      {
+        "id": "work_progress",
+        "label": "Percentage of work progress",
+        "expected": "QA 099"
+      },
+      {
+        "id": "construction_stage",
+        "label": "Stage of construction",
+        "expected": "QA 100"
+      },
+      {
+        "id": "insurance_value",
+        "label": "Considered value for property insurance",
+        "expected": "4000"
+      },
+      {
+        "id": "proposal_number",
+        "label": "Proposal number",
+        "expected": "QA-20260926-VERITAS"
+      },
+      {
+        "id": "existing_loan_amount",
+        "label": "Existing sanctioned loan amount",
+        "expected": "4000"
+      },
+      {
+        "id": "request_loan_amount",
+        "label": "Request loan amount",
+        "expected": "4000"
+      },
+      {
+        "id": "sanctioned_loan_amount",
+        "label": "Sanctioned loan amount",
+        "expected": "4000"
+      },
+      {
+        "id": "lcr",
+        "label": "LCR",
+        "expected": "QA 106"
+      },
+      {
+        "id": "ltv",
+        "label": "LTV",
+        "expected": "QA 107"
+      },
+      {
+        "id": "combined_ltv",
+        "label": "Combined LTV",
+        "expected": "QA 108"
+      },
+      {
+        "id": "structure",
+        "label": "Type of structure",
+        "expected": "QA 109"
+      },
+      {
+        "id": "hazardous_zones",
+        "label": "Hazardous zones applicable",
+        "expected": "QA 110"
+      },
+      {
+        "id": "geometry",
+        "label": "Geometry / design / structural configurations met",
+        "expected": "QA 111"
+      },
+      {
+        "id": "recommended",
+        "label": "Recommended",
+        "expected": "QA 112"
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision."
+      }
+    ],
+    "bytes": 23763393,
+    "calculations": {
+      "total": false,
+      "forcedSale": false
+    },
+    "photoChecks": [
+      {
+        "path": "word/media/image3.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image7.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image12.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image15.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image16.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image17.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image18.png",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "REVIEW"
+  },
+  {
+    "template": "aditya-birla-lap",
+    "kind": "docx",
+    "fields": 174,
+    "photos": 6,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "aditya-birla-lap_104",
+        "label": "Fourth Floor — Deviation",
+        "expected": "QA 105",
+        "actual": ""
+      },
+      {
+        "id": "aditya-birla-lap_139",
+        "label": "Amenities — Value",
+        "expected": "4000",
+        "actual": ""
+      },
+      {
+        "id": "aditya-birla-lap_143",
+        "label": "Front Setback — Remarks",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "aditya-birla-lap_146",
+        "label": "Left Side Setback — Deviation",
+        "expected": "QA 147",
+        "actual": ""
+      },
+      {
+        "id": "aditya-birla-lap_147",
+        "label": "Left Side Setback — Remarks",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "aditya-birla-lap_150",
+        "label": "Right Side Setback — Deviation",
+        "expected": "QA 151",
+        "actual": ""
+      },
+      {
+        "id": "aditya-birla-lap_151",
+        "label": "Right Side Setback — Remarks",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "aditya-birla-lap_154",
+        "label": "Rear Setback — Deviation",
+        "expected": "QA 155",
+        "actual": ""
+      },
+      {
+        "id": "aditya-birla-lap_155",
+        "label": "Rear Setback — Remarks",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      }
+    ],
+    "bytes": 1121257,
+    "photoChecks": [
+      {
+        "path": "word/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "REVIEW"
+  },
+  {
+    "template": "axis-finance",
+    "kind": "xlsx",
+    "fields": 150,
+    "photos": 11,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 1878441,
+    "photoChecks": [
+      {
+        "path": "xl/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image13.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image15.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  },
+  {
+    "template": "chola-sme",
+    "kind": "docx",
+    "fields": 113,
+    "photos": 10,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "chola-sme_96",
+        "label": "Interiors Amount",
+        "expected": "4000",
+        "actual": ""
+      },
+      {
+        "id": "chola-sme_97",
+        "label": "Elevation Amount",
+        "expected": "4000",
+        "actual": ""
+      },
+      {
+        "id": "chola-sme_98",
+        "label": "Borewell Amount",
+        "expected": "4000",
+        "actual": ""
+      },
+      {
+        "id": "chola-sme_102",
+        "label": "Guideline Value",
+        "expected": "4000",
+        "actual": ""
+      }
+    ],
+    "bytes": 1782810,
+    "photoChecks": [
+      {
+        "path": "word/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "REVIEW"
+  },
+  {
+    "template": "equitas",
+    "kind": "docx",
+    "fields": 134,
+    "photos": 12,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "equitas_68",
+        "label": "Approved Layout Plan — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_70",
+        "label": "Approved Plan — Record Type",
+        "expected": "QA 071",
+        "actual": ""
+      },
+      {
+        "id": "equitas_71",
+        "label": "Approved Plan — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_72",
+        "label": "Approved Plan — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_73",
+        "label": "Approved Plan — Approval / Details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "equitas_75",
+        "label": "Title Document / Sale Deed — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_78",
+        "label": "NA Order — Record Type",
+        "expected": "QA 079",
+        "actual": ""
+      },
+      {
+        "id": "equitas_79",
+        "label": "NA Order — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_80",
+        "label": "NA Order — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_81",
+        "label": "NA Order — Approval / Details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "equitas_82",
+        "label": "Sale Agreement — Record Type",
+        "expected": "QA 083",
+        "actual": ""
+      },
+      {
+        "id": "equitas_83",
+        "label": "Sale Agreement — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_84",
+        "label": "Sale Agreement — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_85",
+        "label": "Sale Agreement — Approval / Details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "equitas_86",
+        "label": "Katha / Patta — Record Type",
+        "expected": "QA 087",
+        "actual": ""
+      },
+      {
+        "id": "equitas_87",
+        "label": "Katha / Patta — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_88",
+        "label": "Katha / Patta — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_89",
+        "label": "Katha / Patta — Approval / Details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "equitas_90",
+        "label": "Tax Paid Receipt — Record Type",
+        "expected": "QA 091",
+        "actual": ""
+      },
+      {
+        "id": "equitas_91",
+        "label": "Tax Paid Receipt — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_92",
+        "label": "Tax Paid Receipt — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_93",
+        "label": "Tax Paid Receipt — Approval / Details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "equitas_94",
+        "label": "Building Permit — Record Type",
+        "expected": "QA 095",
+        "actual": ""
+      },
+      {
+        "id": "equitas_95",
+        "label": "Building Permit — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_96",
+        "label": "Building Permit — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_97",
+        "label": "Building Permit — Approval / Details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "equitas_98",
+        "label": "Cash Receipt / Estimation — Record Type",
+        "expected": "QA 099",
+        "actual": ""
+      },
+      {
+        "id": "equitas_99",
+        "label": "Cash Receipt / Estimation — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_100",
+        "label": "Cash Receipt / Estimation — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_101",
+        "label": "Cash Receipt / Estimation — Approval / Details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "equitas_102",
+        "label": "Other Documents — Record Type",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      },
+      {
+        "id": "equitas_103",
+        "label": "Other Documents — Reference No.",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_104",
+        "label": "Other Documents — Reference Date",
+        "expected": "QA-20260926-EQUITAS",
+        "actual": ""
+      },
+      {
+        "id": "equitas_105",
+        "label": "Other Documents — Approval / Details",
+        "expected": "QA ONLY synthetic inspection. No real property or lending decision.",
+        "actual": ""
+      }
+    ],
+    "bytes": 2067831,
+    "photoChecks": [
+      {
+        "path": "word/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image12.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "REVIEW"
+  },
+  {
+    "template": "icici",
+    "kind": "xlsx",
+    "fields": 102,
+    "photos": 3,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 551684,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  },
+  {
+    "template": "jm-finance",
+    "kind": "xlsx",
+    "fields": 112,
+    "photos": 9,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "jm-finance_109",
+        "label": "Person Met at Site / Contact No",
+        "expected": "0000000000",
+        "actual": ""
+      }
+    ],
+    "bytes": 1666357,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image12.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [
+      {
+        "id": "jm-finance_46",
+        "label": "TYPE OF APPROACH ROAD"
+      },
+      {
+        "id": "jm-finance_58",
+        "label": "NO. OF ROOM & INTERNAL AMENITIES DETAILS"
+      },
+      {
+        "id": "jm-finance_79",
+        "label": "FOOTING TYPE"
+      },
+      {
+        "id": "jm-finance_92",
+        "label": "PROPERTY TAX RECIEPTS"
+      },
+      {
+        "id": "jm-finance_93",
+        "label": "OWNERSHIP DOCUMENT VERIFIED 1 (PLS SPECIFY NAME OF DOCUMENT IN DETAILS OF APPROVAL)"
+      },
+      {
+        "id": "jm-finance_94",
+        "label": "OWNERSHIP DOCUMENT VERIFIED 2 (PLS SPECIFY NAME OF DOCUMENT IN DETAILS OF APPROVAL)"
+      },
+      {
+        "id": "jm-finance_105",
+        "label": "MAIN DOOR OF PROPERTY"
+      }
+    ],
+    "result": "REVIEW"
+  },
+  {
+    "template": "niwas-finance",
+    "kind": "xlsx",
+    "fields": 95,
+    "photos": 8,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 1386204,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [
+      {
+        "id": "niwas-finance_22",
+        "label": "Longitude & Latitude of the property"
+      },
+      {
+        "id": "niwas-finance_36",
+        "label": "Is the location inside the Gram Panchayat Limits? Specify Yes / No. If yes, Specify its name"
+      },
+      {
+        "id": "niwas-finance_42",
+        "label": "Width of the passage leading to the actual property in Feet (For Individual House Types)"
+      }
+    ],
+    "result": "REVIEW"
+  },
+  {
+    "template": "smfg-lap",
+    "kind": "docx",
+    "fields": 127,
+    "photos": 7,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "smfg-lap_91",
+        "label": "Composite Extra Coverage",
+        "expected": "QA 092",
+        "actual": ""
+      },
+      {
+        "id": "smfg-lap_108",
+        "label": "Total Amenities Charges",
+        "expected": "QA 109",
+        "actual": ""
+      }
+    ],
+    "bytes": 1247835,
+    "photoChecks": [
+      {
+        "path": "word/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "REVIEW"
+  },
+  {
+    "template": "smfg-rural-lap",
+    "kind": "xlsx",
+    "fields": 80,
+    "photos": 7,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "smfg-rural-lap_79",
+        "label": "Property Currently Occupied By",
+        "expected": "QA 080",
+        "actual": ""
+      }
+    ],
+    "bytes": 1211800,
+    "photoChecks": [
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [
+      {
+        "id": "smfg-rural-lap_33",
+        "label": "Geo Positioning of the Property (Longitude & Latitude)"
+      }
+    ],
+    "result": "REVIEW"
+  },
+  {
+    "template": "tyger-finance",
+    "kind": "xlsx",
+    "fields": 88,
+    "photos": 11,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 1892871,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image11.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image12.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [
+      {
+        "id": "tyger-finance_69",
+        "label": "REMARKS ON DOCUMENT VERIFIED"
+      }
+    ],
+    "result": "REVIEW"
+  },
+  {
+    "template": "ugrow",
+    "kind": "xlsx",
+    "fields": 62,
+    "photos": 8,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "ugrow_61",
+        "label": "Occupant Name as per Society / Name Plate",
+        "expected": "QA 062",
+        "actual": ""
+      }
+    ],
+    "bytes": 1379775,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [
+      {
+        "id": "ugrow_10",
+        "label": "Property Sub Type (Occupancy) (Selfoccupied/Tenanted/Vacant/Under- Construction )"
+      },
+      {
+        "id": "ugrow_15",
+        "label": "Unit Details"
+      },
+      {
+        "id": "ugrow_18",
+        "label": "Year of Construction of the Building"
+      },
+      {
+        "id": "ugrow_19",
+        "label": "Age of the property (years)"
+      },
+      {
+        "id": "ugrow_25",
+        "label": "Property of Katuri Chitti Babu"
+      },
+      {
+        "id": "ugrow_26",
+        "label": "Property of Varikuti Prasad"
+      },
+      {
+        "id": "ugrow_33",
+        "label": "Quality of Construction"
+      },
+      {
+        "id": "ugrow_34",
+        "label": "No. of Flats in each Floor (If Apartment)"
+      }
+    ],
+    "result": "REVIEW"
+  },
+  {
+    "template": "ummeed",
+    "kind": "docx",
+    "fields": 185,
+    "photos": 8,
+    "checks": [],
+    "mismatches": [
+      {
+        "id": "ummeed_95",
+        "label": "Composite Area",
+        "expected": "1200",
+        "actual": ""
+      }
+    ],
+    "bytes": 1390156,
+    "photoChecks": [
+      {
+        "path": "word/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image12.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image13.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image14.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "REVIEW"
+  },
+  {
+    "template": "kreditbee",
+    "kind": "xlsx",
+    "fields": 94,
+    "photos": 8,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 2613245,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.jpeg",
+        "pass": true
+      }
+    ],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  }
+]

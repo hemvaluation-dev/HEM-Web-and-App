@@ -1,0 +1,1090 @@
+[
+  {
+    "template": "veritas",
+    "kind": "docx",
+    "fields": 113,
+    "photos": 17,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 35032385,
+    "calculations": {
+      "total": true,
+      "forcedSale": true
+    },
+    "photoChecks": [
+      {
+        "path": "word/media/image3.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image7.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image12.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image15.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image16.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image17.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image18.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  },
+  {
+    "template": "aditya-birla-lap",
+    "kind": "docx",
+    "fields": 174,
+    "photos": 11,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 20081016,
+    "photoChecks": [
+      {
+        "path": "word/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image7.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  },
+  {
+    "template": "axis-finance",
+    "kind": "xlsx",
+    "fields": 150,
+    "photos": 14,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 9118330,
+    "photoChecks": [
+      {
+        "path": "xl/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image13.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image15.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image11.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image14.jpeg",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "unusedSharedStrings": 0,
+    "result": "PASS"
+  },
+  {
+    "template": "chola-sme",
+    "kind": "docx",
+    "fields": 113,
+    "photos": 15,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 20049554,
+    "photoChecks": [
+      {
+        "path": "word/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image12.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image15.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  },
+  {
+    "template": "equitas",
+    "kind": "docx",
+    "fields": 134,
+    "photos": 16,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 16981862,
+    "photoChecks": [
+      {
+        "path": "word/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image12.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image15.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image16.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  },
+  {
+    "template": "icici",
+    "kind": "xlsx",
+    "fields": 102,
+    "photos": 5,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 3430920,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4-additional-view.jpeg",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "unusedSharedStrings": 0,
+    "result": "PASS"
+  },
+  {
+    "template": "jm-finance",
+    "kind": "xlsx",
+    "fields": 117,
+    "photos": 17,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 16506326,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image12.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image11.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image15.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image16.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image17.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image18.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [
+      {
+        "id": "jm-finance_46",
+        "cells": [
+          "Retail Technical!C710"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      },
+      {
+        "id": "jm-finance_58",
+        "cells": [
+          "Retail Technical!I696"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      },
+      {
+        "id": "jm-finance_79",
+        "cells": [
+          "Retail Technical!I696"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      },
+      {
+        "id": "jm-finance_92",
+        "cells": [
+          "Retail Technical!I723"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      },
+      {
+        "id": "jm-finance_93",
+        "cells": [
+          "Retail Technical!I723"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      },
+      {
+        "id": "jm-finance_94",
+        "cells": [
+          "Retail Technical!I723"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      }
+    ],
+    "blankSampleFlags": [],
+    "unusedSharedStrings": 0,
+    "result": "PASS"
+  },
+  {
+    "template": "niwas-finance",
+    "kind": "xlsx",
+    "fields": 104,
+    "photos": 15,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 21649057,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image11.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image12.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image15.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image16.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "unusedSharedStrings": 0,
+    "result": "PASS"
+  },
+  {
+    "template": "smfg-lap",
+    "kind": "docx",
+    "fields": 127,
+    "photos": 14,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 10207920,
+    "photoChecks": [
+      {
+        "path": "word/media/image1.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image12.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image14.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  },
+  {
+    "template": "smfg-rural-lap",
+    "kind": "xlsx",
+    "fields": 82,
+    "photos": 14,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 20332952,
+    "photoChecks": [
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image2.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image11.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image12.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image15.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "unusedSharedStrings": 0,
+    "result": "PASS"
+  },
+  {
+    "template": "tyger-finance",
+    "kind": "xlsx",
+    "fields": 93,
+    "photos": 18,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 31877709,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image11.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image12.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image13.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image15.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image16.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image17.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image18.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image19.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [
+      {
+        "id": "tyger-finance_69",
+        "cells": [
+          "Sheet1!C72"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      }
+    ],
+    "blankSampleFlags": [],
+    "unusedSharedStrings": 0,
+    "result": "PASS"
+  },
+  {
+    "template": "ugrow",
+    "kind": "xlsx",
+    "fields": 69,
+    "photos": 16,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 30838883,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image11.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image12.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image14.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image15.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image16.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image17.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [
+      {
+        "id": "ugrow_10",
+        "cells": [
+          "Modified Format!B20"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      },
+      {
+        "id": "ugrow_18",
+        "cells": [
+          "Modified Format!B20"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      },
+      {
+        "id": "ugrow_19",
+        "cells": [
+          "Modified Format!B20"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      },
+      {
+        "id": "ugrow_33",
+        "cells": [
+          "Modified Format!B20"
+        ],
+        "reason": "Fixed heading or validation-list option"
+      }
+    ],
+    "blankSampleFlags": [],
+    "unusedSharedStrings": 0,
+    "result": "PASS"
+  },
+  {
+    "template": "ummeed",
+    "kind": "docx",
+    "fields": 185,
+    "photos": 15,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 24694320,
+    "photoChecks": [
+      {
+        "path": "word/media/image7.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image11.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image12.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image13.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image14.jpeg",
+        "pass": true
+      },
+      {
+        "path": "word/media/image1.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image2.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image3.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image4.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image5.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image6.png",
+        "pass": true
+      },
+      {
+        "path": "word/media/image15.jpeg",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "result": "PASS"
+  },
+  {
+    "template": "kreditbee",
+    "kind": "xlsx",
+    "fields": 138,
+    "photos": 13,
+    "checks": [],
+    "mismatches": [],
+    "bytes": 14901511,
+    "photoChecks": [
+      {
+        "path": "xl/media/image2.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image3.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image4.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image5.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image6.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image7.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image9.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image10.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image8.jpeg",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image11.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image12.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image13.png",
+        "pass": true
+      },
+      {
+        "path": "xl/media/image14.png",
+        "pass": true
+      }
+    ],
+    "reviewedStaticText": [],
+    "blankSampleFlags": [],
+    "unusedSharedStrings": 0,
+    "result": "PASS"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {"name":"feet sides and legacy units","input":{"land_measurements_east":"30","land_measurements_west":"30","land_measurements_north":"40","land_measurements_south":"40","land_rate":"9,000","plinth_measurements_east":"20","plinth_measurements_west":"20","plinth_measurements_north":"30","plinth_measurements_south":"30","construction_rate":"1000","slab_area":"600","slab_area_unit":"sqft","slab_rate":"100"},"expected":{"land_area":"133.333333","land_value":"1200000","bua":"66.666667","building_value":"600000","slab_value":"60000","total_value":"1800000"}},
+  {"name":"incomplete sides clear stale area","input":{"land_measurements_east":"30","land_area":"100","land_rate":"100","include_plinth_value":false},"expected":{"land_area":"","land_value":"","total_value":""}},
+  {"name":"zero and selected slab","input":{"land_area":"0","land_rate":"9000","slab_area":"10","slab_area_unit":"sqm","slab_rate":"200","slab_rate_unit":"sqm","include_slab_value":true,"include_plinth_value":false},"expected":{"land_value":"0","slab_value":"2000","total_value":"2000"}},
+  {"name":"negative measurements cannot value","input":{"land_measurements_east":"-1","land_area":"50","land_rate":"200"},"expected":{"land_area":"","land_value":"","total_value":""}}
+]

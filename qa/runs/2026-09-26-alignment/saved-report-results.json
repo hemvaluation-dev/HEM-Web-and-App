@@ -1,0 +1,184 @@
+[
+  {
+    "reference": "QA-20260926-UMMEED",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "713d5d23-3312-40ec-8f99-0452228e3f31",
+        "template": "ummeed",
+        "bytes": 1390146,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-KREDITBEE",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "80945dd6-f5b5-4cf8-a81f-1caa619d4c0d",
+        "template": "kreditbee",
+        "bytes": 2649443,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-VERITAS",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "a308a616-1d98-45e0-a5d6-7434f7973929",
+        "template": "veritas",
+        "bytes": 23762810,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-EQUITAS",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "a4cb2bc2-3451-423b-b2e8-f96ac0219fd1",
+        "template": "equitas",
+        "bytes": 2067856,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-UGROW",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "146e131f-0ba8-4f3e-9de0-ca9616c82026",
+        "template": "ugrow",
+        "bytes": 1379112,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-ICICI",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "5854357f-e522-4cd2-9a3d-3da67430e18d",
+        "template": "icici",
+        "bytes": 550996,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-ADITYA",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "c4546429-d812-43e0-8ae6-eca4d673a11f",
+        "template": "aditya-birla-lap",
+        "bytes": 1121314,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-AXIS",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "bdc49d2e-e6c5-4af2-b8ed-d6ff5e507008",
+        "template": "axis-finance",
+        "bytes": 1877492,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-CHOLA",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "3e2ea3d9-9df4-4e75-8c08-45c56ccf68b6",
+        "template": "chola-sme",
+        "bytes": 1782808,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-JM",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "0f5b69fc-a8e3-45c6-8aba-58ea821f5d35",
+        "template": "jm-finance",
+        "bytes": 1665719,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-NIWAS",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "ecbc8e80-1266-4f6c-8164-ebd4f341ba1d",
+        "template": "niwas-finance",
+        "bytes": 1385404,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-SMFG",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "6591848e-94a9-475f-9a82-1129cf44c642",
+        "template": "smfg-lap",
+        "bytes": 1247847,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-SMFG-RURAL",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "9c1759da-29f6-4e12-b023-eaf5ff83d85e",
+        "template": "smfg-rural-lap",
+        "bytes": 1211131,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "reference": "QA-20260926-TYGER",
+    "status": "report_drafted",
+    "versions": 1,
+    "artifacts": [
+      {
+        "id": "3f4a9c59-5043-4241-b9d2-5a9064f8e5d2",
+        "template": "tyger-finance",
+        "bytes": 1892486,
+        "pass": true
+      }
+    ]
+  }
+]

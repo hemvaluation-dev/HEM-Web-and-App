@@ -1,0 +1,267 @@
+[
+  {
+    "template": "veritas",
+    "caseId": "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc",
+    "reference": "QA-20260926-VERITAS",
+    "creation": "portal UI",
+    "photos": [
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-01.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-02.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-03.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-04.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-05.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-06.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-07.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-08.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-09.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-10.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-11.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-12.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-13.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-14.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-15.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-16.jpg",
+      "39fe2edd-38d8-4e2c-9742-07bc8d2a1ebc/qa-20260926-17.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "aditya-birla-lap",
+    "caseId": "e5e2081d-fca8-4843-8e57-3cb0e7dc0ab6",
+    "reference": "QA-20260926-ADITYA",
+    "creation": "portal UI",
+    "photos": [
+      "e5e2081d-fca8-4843-8e57-3cb0e7dc0ab6/qa-20260926-01.jpg",
+      "e5e2081d-fca8-4843-8e57-3cb0e7dc0ab6/qa-20260926-02.jpg",
+      "e5e2081d-fca8-4843-8e57-3cb0e7dc0ab6/qa-20260926-03.jpg",
+      "e5e2081d-fca8-4843-8e57-3cb0e7dc0ab6/qa-20260926-04.jpg",
+      "e5e2081d-fca8-4843-8e57-3cb0e7dc0ab6/qa-20260926-05.jpg",
+      "e5e2081d-fca8-4843-8e57-3cb0e7dc0ab6/qa-20260926-06.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "axis-finance",
+    "caseId": "fe3a5543-1f56-485b-9c14-74f21c178205",
+    "reference": "QA-20260926-AXIS",
+    "creation": "portal UI",
+    "photos": [
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-01.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-02.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-03.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-04.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-05.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-06.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-07.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-08.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-09.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-10.jpg",
+      "fe3a5543-1f56-485b-9c14-74f21c178205/qa-20260926-11.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "chola-sme",
+    "caseId": "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea",
+    "reference": "QA-20260926-CHOLA",
+    "creation": "service fixture setup",
+    "photos": [
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-01.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-02.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-03.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-04.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-05.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-06.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-07.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-08.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-09.jpg",
+      "8f8c4c1e-7cbd-48d0-a83b-7a3d6af9bfea/qa-20260926-10.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "equitas",
+    "caseId": "b20f1450-3190-4c41-bdc9-7e5af082f379",
+    "reference": "QA-20260926-EQUITAS",
+    "creation": "service fixture setup",
+    "photos": [
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-01.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-02.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-03.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-04.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-05.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-06.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-07.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-08.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-09.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-10.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-11.jpg",
+      "b20f1450-3190-4c41-bdc9-7e5af082f379/qa-20260926-12.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "icici",
+    "caseId": "6aaf5de4-f9be-496a-b963-84a5d36c14c5",
+    "reference": "QA-20260926-ICICI",
+    "creation": "service fixture setup",
+    "photos": [
+      "6aaf5de4-f9be-496a-b963-84a5d36c14c5/qa-20260926-01.jpg",
+      "6aaf5de4-f9be-496a-b963-84a5d36c14c5/qa-20260926-02.jpg",
+      "6aaf5de4-f9be-496a-b963-84a5d36c14c5/qa-20260926-03.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "jm-finance",
+    "caseId": "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98",
+    "reference": "QA-20260926-JM",
+    "creation": "service fixture setup",
+    "photos": [
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-01.jpg",
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-02.jpg",
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-03.jpg",
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-04.jpg",
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-05.jpg",
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-06.jpg",
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-07.jpg",
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-08.jpg",
+      "2348708d-0f64-4ad5-a0b9-23ce5ec9ea98/qa-20260926-09.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "niwas-finance",
+    "caseId": "0681cd02-9dda-40e6-a58a-b14d23cd1490",
+    "reference": "QA-20260926-NIWAS",
+    "creation": "service fixture setup",
+    "photos": [
+      "0681cd02-9dda-40e6-a58a-b14d23cd1490/qa-20260926-01.jpg",
+      "0681cd02-9dda-40e6-a58a-b14d23cd1490/qa-20260926-02.jpg",
+      "0681cd02-9dda-40e6-a58a-b14d23cd1490/qa-20260926-03.jpg",
+      "0681cd02-9dda-40e6-a58a-b14d23cd1490/qa-20260926-04.jpg",
+      "0681cd02-9dda-40e6-a58a-b14d23cd1490/qa-20260926-05.jpg",
+      "0681cd02-9dda-40e6-a58a-b14d23cd1490/qa-20260926-06.jpg",
+      "0681cd02-9dda-40e6-a58a-b14d23cd1490/qa-20260926-07.jpg",
+      "0681cd02-9dda-40e6-a58a-b14d23cd1490/qa-20260926-08.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "smfg-lap",
+    "caseId": "6b5eaa59-e94f-41b1-9b00-840e066aa238",
+    "reference": "QA-20260926-SMFG",
+    "creation": "service fixture setup",
+    "photos": [
+      "6b5eaa59-e94f-41b1-9b00-840e066aa238/qa-20260926-01.jpg",
+      "6b5eaa59-e94f-41b1-9b00-840e066aa238/qa-20260926-02.jpg",
+      "6b5eaa59-e94f-41b1-9b00-840e066aa238/qa-20260926-03.jpg",
+      "6b5eaa59-e94f-41b1-9b00-840e066aa238/qa-20260926-04.jpg",
+      "6b5eaa59-e94f-41b1-9b00-840e066aa238/qa-20260926-05.jpg",
+      "6b5eaa59-e94f-41b1-9b00-840e066aa238/qa-20260926-06.jpg",
+      "6b5eaa59-e94f-41b1-9b00-840e066aa238/qa-20260926-07.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "smfg-rural-lap",
+    "caseId": "92d17325-73bf-44c4-809e-37e3b854cc1d",
+    "reference": "QA-20260926-SMFG-RURAL",
+    "creation": "service fixture setup",
+    "photos": [
+      "92d17325-73bf-44c4-809e-37e3b854cc1d/qa-20260926-01.jpg",
+      "92d17325-73bf-44c4-809e-37e3b854cc1d/qa-20260926-02.jpg",
+      "92d17325-73bf-44c4-809e-37e3b854cc1d/qa-20260926-03.jpg",
+      "92d17325-73bf-44c4-809e-37e3b854cc1d/qa-20260926-04.jpg",
+      "92d17325-73bf-44c4-809e-37e3b854cc1d/qa-20260926-05.jpg",
+      "92d17325-73bf-44c4-809e-37e3b854cc1d/qa-20260926-06.jpg",
+      "92d17325-73bf-44c4-809e-37e3b854cc1d/qa-20260926-07.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "tyger-finance",
+    "caseId": "f02b2d1a-c520-49f4-a804-2f3e6eb0846c",
+    "reference": "QA-20260926-TYGER",
+    "creation": "service fixture setup",
+    "photos": [
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-01.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-02.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-03.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-04.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-05.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-06.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-07.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-08.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-09.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-10.jpg",
+      "f02b2d1a-c520-49f4-a804-2f3e6eb0846c/qa-20260926-11.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "ugrow",
+    "caseId": "1cd1d90a-bcea-459e-9ff2-49180a0ee556",
+    "reference": "QA-20260926-UGROW",
+    "creation": "service fixture setup",
+    "photos": [
+      "1cd1d90a-bcea-459e-9ff2-49180a0ee556/qa-20260926-01.jpg",
+      "1cd1d90a-bcea-459e-9ff2-49180a0ee556/qa-20260926-02.jpg",
+      "1cd1d90a-bcea-459e-9ff2-49180a0ee556/qa-20260926-03.jpg",
+      "1cd1d90a-bcea-459e-9ff2-49180a0ee556/qa-20260926-04.jpg",
+      "1cd1d90a-bcea-459e-9ff2-49180a0ee556/qa-20260926-05.jpg",
+      "1cd1d90a-bcea-459e-9ff2-49180a0ee556/qa-20260926-06.jpg",
+      "1cd1d90a-bcea-459e-9ff2-49180a0ee556/qa-20260926-07.jpg",
+      "1cd1d90a-bcea-459e-9ff2-49180a0ee556/qa-20260926-08.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "ummeed",
+    "caseId": "10659484-a50a-44d9-8b63-3c54661e3a6c",
+    "reference": "QA-20260926-UMMEED",
+    "creation": "service fixture setup",
+    "photos": [
+      "10659484-a50a-44d9-8b63-3c54661e3a6c/qa-20260926-01.jpg",
+      "10659484-a50a-44d9-8b63-3c54661e3a6c/qa-20260926-02.jpg",
+      "10659484-a50a-44d9-8b63-3c54661e3a6c/qa-20260926-03.jpg",
+      "10659484-a50a-44d9-8b63-3c54661e3a6c/qa-20260926-04.jpg",
+      "10659484-a50a-44d9-8b63-3c54661e3a6c/qa-20260926-05.jpg",
+      "10659484-a50a-44d9-8b63-3c54661e3a6c/qa-20260926-06.jpg",
+      "10659484-a50a-44d9-8b63-3c54661e3a6c/qa-20260926-07.jpg",
+      "10659484-a50a-44d9-8b63-3c54661e3a6c/qa-20260926-08.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  },
+  {
+    "template": "kreditbee",
+    "caseId": "65bc46e7-049f-43f8-ba9c-d8545d48a1a7",
+    "reference": "QA-20260926-KREDITBEE",
+    "creation": "service fixture setup",
+    "photos": [
+      "65bc46e7-049f-43f8-ba9c-d8545d48a1a7/qa-20260926-01.jpg",
+      "65bc46e7-049f-43f8-ba9c-d8545d48a1a7/qa-20260926-02.jpg",
+      "65bc46e7-049f-43f8-ba9c-d8545d48a1a7/qa-20260926-03.jpg",
+      "65bc46e7-049f-43f8-ba9c-d8545d48a1a7/qa-20260926-04.jpg",
+      "65bc46e7-049f-43f8-ba9c-d8545d48a1a7/qa-20260926-05.jpg",
+      "65bc46e7-049f-43f8-ba9c-d8545d48a1a7/qa-20260926-06.jpg",
+      "65bc46e7-049f-43f8-ba9c-d8545d48a1a7/qa-20260926-07.jpg",
+      "65bc46e7-049f-43f8-ba9c-d8545d48a1a7/qa-20260926-08.jpg"
+    ],
+    "document": null,
+    "fixtureLoaded": true
+  }
+]

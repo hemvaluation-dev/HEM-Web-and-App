@@ -1,0 +1,100 @@
+[
+  {
+    "template": "aditya-birla-lap",
+    "pages": 10,
+    "reviewed_letterhead_backgrounds": 10,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "axis-finance",
+    "pages": 6,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "chola-sme",
+    "pages": 8,
+    "reviewed_letterhead_backgrounds": 8,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "equitas",
+    "pages": 10,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "icici",
+    "pages": 5,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "jm-finance",
+    "pages": 9,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "kreditbee",
+    "pages": 8,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "niwas-finance",
+    "pages": 15,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "smfg-lap",
+    "pages": 10,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "smfg-rural-lap",
+    "pages": 11,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "tyger-finance",
+    "pages": 11,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "ugrow",
+    "pages": 15,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "ummeed",
+    "pages": 11,
+    "reviewed_letterhead_backgrounds": 0,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  },
+  {
+    "template": "veritas",
+    "pages": 8,
+    "reviewed_letterhead_backgrounds": 1,
+    "out_of_page_images": [],
+    "overlapping_image_pairs": []
+  }
+]

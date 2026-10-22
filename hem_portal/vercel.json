@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "src/app/api/report/**/*": {
+      "maxDuration": 120
+    },
+    "src/app/api/**/*": {
+      "maxDuration": 60
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
+}

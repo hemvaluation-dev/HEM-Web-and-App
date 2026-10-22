@@ -1,0 +1,128 @@
+[
+  {
+    "template": "H.E.M. Associates / Veritas",
+    "id": "veritas",
+    "visible": 113,
+    "agent": 58,
+    "calculated": 11,
+    "separate": 44,
+    "photos": 17
+  },
+  {
+    "template": "ADITYA BIRLA LAP",
+    "id": "aditya-birla-lap",
+    "visible": 173,
+    "agent": 59,
+    "calculated": 7,
+    "separate": 107,
+    "photos": 11
+  },
+  {
+    "template": "AXIS FINANCE",
+    "id": "axis-finance",
+    "visible": 150,
+    "agent": 49,
+    "calculated": 2,
+    "separate": 99,
+    "photos": 14
+  },
+  {
+    "template": "CHOLA SME",
+    "id": "chola-sme",
+    "visible": 113,
+    "agent": 47,
+    "calculated": 3,
+    "separate": 63,
+    "photos": 15
+  },
+  {
+    "template": "EQUITAS",
+    "id": "equitas",
+    "visible": 134,
+    "agent": 44,
+    "calculated": 7,
+    "separate": 83,
+    "photos": 16
+  },
+  {
+    "template": "ICICI",
+    "id": "icici",
+    "visible": 102,
+    "agent": 38,
+    "calculated": 7,
+    "separate": 57,
+    "photos": 5
+  },
+  {
+    "template": "JM FINANCE",
+    "id": "jm-finance",
+    "visible": 117,
+    "agent": 40,
+    "calculated": 3,
+    "separate": 74,
+    "photos": 17
+  },
+  {
+    "template": "NIWAS FINANCE",
+    "id": "niwas-finance",
+    "visible": 104,
+    "agent": 49,
+    "calculated": 0,
+    "separate": 55,
+    "photos": 15
+  },
+  {
+    "template": "SMFG LAP",
+    "id": "smfg-lap",
+    "visible": 125,
+    "agent": 58,
+    "calculated": 7,
+    "separate": 60,
+    "photos": 14
+  },
+  {
+    "template": "SMFG RURAL LAP",
+    "id": "smfg-rural-lap",
+    "visible": 81,
+    "agent": 27,
+    "calculated": 2,
+    "separate": 52,
+    "photos": 14
+  },
+  {
+    "template": "TYGER FINANCE",
+    "id": "tyger-finance",
+    "visible": 93,
+    "agent": 38,
+    "calculated": 0,
+    "separate": 55,
+    "photos": 18
+  },
+  {
+    "template": "UGROW",
+    "id": "ugrow",
+    "visible": 67,
+    "agent": 36,
+    "calculated": 0,
+    "separate": 31,
+    "photos": 16
+  },
+  {
+    "template": "UMMEED",
+    "id": "ummeed",
+    "visible": 185,
+    "agent": 54,
+    "calculated": 6,
+    "separate": 125,
+    "photos": 15
+  },
+  {
+    "template": "KreditBee",
+    "id": "kreditbee",
+    "visible": 138,
+    "agent": 51,
+    "calculated": 4,
+    "separate": 83,
+    "photos": 13
+  }
+]
