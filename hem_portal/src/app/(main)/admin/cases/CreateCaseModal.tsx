@@ -6,6 +6,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Plus, X, Loader2 } from 'lucide-react'
 import { createCase, getAllClients, getAllAgents, generateDocumentUploadUrl, attachCaseDocumentRecord } from '../actions'
 import { INDIAN_STATES } from '@/utils/constants'
+import { initiationLocalTime } from '@/lib/cases/initiation'
 import { createClient } from '@/utils/supabase/client'
 
 export default function CreateCaseModal({ agents, clients, sidebarMode, mobileNavMode }: { agents?: any[], clients?: any[], reviewers?: any[], sidebarMode?: boolean, mobileNavMode?: boolean }) {
@@ -18,6 +19,8 @@ export default function CreateCaseModal({ agents, clients, sidebarMode, mobileNa
   const [clientList, setClientList] = useState<any[]>(clients || [])
   const [selectedClientId, setSelectedClientId] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [createdCaseId, setCreatedCaseId] = useState<string | null>(null)
+  const uploadedDocuments = useRef(new Set<string>())
   const idempotencyKeyRef = useRef(crypto.randomUUID())
 
   useEffect(() => {
@@ -41,6 +44,8 @@ export default function CreateCaseModal({ agents, clients, sidebarMode, mobileNa
   // Reset idempotency key and submission state when modal opens fresh
   useEffect(() => {
     if (isOpen) {
+      setCreatedCaseId(null)
+      uploadedDocuments.current.clear()
       idempotencyKeyRef.current = crypto.randomUUID()
       setSubmitted(false)
       setError('')
@@ -66,33 +71,34 @@ export default function CreateCaseModal({ agents, clients, sidebarMode, mobileNa
     formData.set('idempotency_key', idempotencyKeyRef.current)
     
     try {
-      const res = await createCase(formData)
+      const res = createdCaseId ? { caseId: createdCaseId, error: undefined } : await createCase(formData)
       if (res.error) {
         setError(res.error)
         setSubmitted(false) // Allow user to fix error and resubmit
       } else {
         const caseId = res.caseId
+        if (!caseId) throw new Error('The created case could not be identified. Refresh the case list before retrying.')
+        setCreatedCaseId(caseId)
         if (caseId && documents && documents.length > 0) {
           const validDocs = documents.filter(f => f.size > 0)
           if (validDocs.length > 0) {
             const supabase = createClient()
             for (const file of validDocs) {
+              const key = `${file.name}:${file.size}:${file.lastModified}`
+              if (uploadedDocuments.current.has(key)) continue
               const uploadInfo = await generateDocumentUploadUrl(caseId, file.name, file.size)
-              if (uploadInfo.token && uploadInfo.path && uploadInfo.publicUrl) {
-                const { error: uploadError } = await supabase.storage
-                  .from('documents')
-                  .uploadToSignedUrl(uploadInfo.path, uploadInfo.token, file)
-                
-                if (!uploadError) {
-                  const attached = await attachCaseDocumentRecord(caseId, uploadInfo.publicUrl, file.name)
-                  if (attached.error) {
-                    await supabase.storage.from('documents').remove([uploadInfo.path])
-                    console.error('Failed to attach uploaded document:', attached.error)
-                  }
-                } else {
-                  console.error('Failed to upload document:', uploadError)
-                }
+              if (!uploadInfo.token || !uploadInfo.path || !uploadInfo.publicUrl) {
+                throw new Error(`Case created, but ${file.name} could not be prepared for upload. Retry to attach the remaining files.`)
               }
+              const { error: uploadError } = await supabase.storage.from('documents')
+                .uploadToSignedUrl(uploadInfo.path, uploadInfo.token, file)
+              if (uploadError) throw new Error(`Case created, but ${file.name} could not upload. Retry to attach the remaining files.`)
+              const attached = await attachCaseDocumentRecord(caseId, uploadInfo.publicUrl, file.name)
+              if (attached.error) {
+                await supabase.storage.from('documents').remove([uploadInfo.path])
+                throw new Error(`Case created, but ${file.name} could not be attached. Retry to attach the remaining files.`)
+              }
+              uploadedDocuments.current.add(key)
             }
           }
         }
@@ -150,7 +156,7 @@ export default function CreateCaseModal({ agents, clients, sidebarMode, mobileNa
               </button>
             </div>
             
-            <form action={handleSubmit} className="overflow-y-auto p-6 space-y-5 text-xs">
+            <form onSubmit={event => { event.preventDefault(); void handleSubmit(new FormData(event.currentTarget)) }} className="overflow-y-auto p-6 space-y-5 text-xs">
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -260,6 +266,20 @@ export default function CreateCaseModal({ agents, clients, sidebarMode, mobileNa
                 </div>
               </div>
 
+              <div>
+                <label htmlFor="case-initiation-time" className="block font-semibold text-ink mb-1.5">Initiation date & time (IST)</label>
+                <input id="case-initiation-time" type="datetime-local" name="created_at" required
+                  defaultValue={initiationLocalTime()} disabled={loading || Boolean(createdCaseId)}
+                  className="w-full bg-paper-2 border border-line rounded-xl px-3.5 py-2.5 text-sm text-ink focus:border-primary outline-none" />
+                <p className="text-muted mt-1">Indian Standard Time (UTC+05:30). Defaults to now; select the actual initiation time.</p>
+              </div>
+              <div>
+                <label htmlFor="case-initial-documents" className="block font-semibold text-ink mb-1.5">Initial documents (optional)</label>
+                <input id="case-initial-documents" type="file" name="documents" multiple disabled={loading}
+                  className="w-full bg-paper-2 border border-line rounded-xl px-3.5 py-2.5 text-sm text-ink file:mr-3 file:rounded-lg file:border-0 file:bg-primary/10 file:px-3 file:py-2 file:text-brand-dark" />
+                <p className="text-muted mt-1">Select one or more property documents. Maximum 18 MB per file. Files upload directly to private case storage.</p>
+              </div>
+
               <p className="text-xs text-muted">A valuator prepares the report and completes the case. Senior approval is not required.</p>
 
               {error && (
@@ -281,7 +301,7 @@ export default function CreateCaseModal({ agents, clients, sidebarMode, mobileNa
                   disabled={loading || submitted}
                   className="bg-primary dark:bg-primary hover:opacity-90 text-on-primary font-bold px-5 py-2 rounded-xl text-xs transition-all shadow-md flex items-center justify-center gap-2 disabled:opacity-50"
                 >
-                  {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : (submitted ? 'Submitted' : 'Initiate Evaluation')}
+                  {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : (createdCaseId ? 'Retry document uploads' : 'Initiate Evaluation')}
                 </button>
               </div>
             </form>

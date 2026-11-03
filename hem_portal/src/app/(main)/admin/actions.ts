@@ -1,5 +1,6 @@
 'use server'
 
+import { initiationTimestamp } from '@/lib/cases/initiation'
 import { editableEvidence } from '@/lib/cases/evidence'
 import { objectPath } from '@/lib/reports/storage'
 
@@ -319,7 +320,7 @@ export async function createCase(formData: FormData) {
       if (existingCase) {
         // Case was already created by a previous attempt — return success without creating a duplicate
         revalidatePath('/admin/cases')
-        return { success: true }
+        return { success: true, caseId: existingCase.id }
       }
     }
 
@@ -343,11 +344,7 @@ export async function createCase(formData: FormData) {
       caseData.idempotency_key = idempotency_key
     }
 
-    if (created_at) {
-      // Append +05:30 if it doesn't already have timezone info to ensure IST
-      const tzString = created_at.includes('Z') || created_at.includes('+') ? created_at : `${created_at}+05:30`
-      caseData.created_at = new Date(tzString).toISOString()
-    }
+    if (created_at) caseData.created_at = initiationTimestamp(created_at)
     if (deadline_date) {
       const tzString = deadline_date.includes('Z') || deadline_date.includes('+') ? deadline_date : `${deadline_date}+05:30`
       caseData.deadline_date = new Date(tzString).toISOString()
