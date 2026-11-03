@@ -1,4 +1,4 @@
-import '../../../core/field_requirements.dart';
+import '../../core/field_requirements.dart';
 import '../../core/case_workflow.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -38,7 +38,7 @@ class _CaseDetailsScreenState extends State<CaseDetailsScreen> {
       final results = await Future.wait([
         client
             .from('cases')
-            .select('*, client:client_id(template_name)')
+            .select('*, client:client_id(name, template_name)')
             .eq('id', widget.caseId)
             .single(),
         client
@@ -254,6 +254,10 @@ class _CaseDetailsScreenState extends State<CaseDetailsScreen> {
                       ),
                       SizedBox(height: 16),
                       _buildInfoRow('Name', _caseData!['applicant_name']),
+                      _buildInfoRow(
+                        'Institution',
+                        _caseData!['client']?['name']?.toString() ?? 'Not specified',
+                      ),
                       if (_caseData!['application_number'] != null &&
                           _caseData!['application_number']
                               .toString()
